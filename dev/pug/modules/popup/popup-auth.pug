@@ -1,0 +1,20 @@
+#modal-auth.modal.fade(tabindex='-1' role='dialog' aria-labelledby='modal-register' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        form.modal-content
+            .popup-header
+                button.close.popup-close(type='button' data-dismiss='modal' aria-label='Close')
+                    +icon('modal-close')
+                h3.popup-title Авторизация
+            .popup-body
+                .popup-inputs--wrap
+                    .popup-inputs--item
+                        label Телефон:
+                        input.popup-input.mask-phone(type="text" placeholder="+7 ...")
+                    .popup-inputs--item
+                        label Пароль:
+                        input.popup-input(type="password" placeholder="Введите пароль")
+            .popup-footer
+                button.harmonika-button-pinkblack.w-230(type="submit") Войти
+                .popup-have-acc
+                    span Еще нет аккаунта?
+                    a(href="/") Зарегистрируйтесь

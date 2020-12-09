@@ -1,0 +1,118 @@
+section.order
+    .container
+        h3.section-title3.text-left Оформление заказа
+        form.order-wrapper
+            .order-left.col-lg-9
+                .order-content-wrap
+                    ul.order-product-list
+                        li.order-product-item.order-white-box
+                            .order-product-item--img-name
+                                img.order-product-item__img(src="static/img/general/search/big1.png" alt="Order")
+                                .order-product-item--name Увлажняющий крем с экстрактом жасмина Lobarel
+                            .order-product-item__count-price
+                                .order-product-item__count(onmousedown="return false" onselectstart="return false")
+                                    .order-product-item__minus.order-product-item--controls.order-count-last
+                                        +icon('minus3')
+                                    input.order-product-item__value(type="text" value="1")
+                                    .order-product-item__plus.order-product-item--controls
+                                        +icon('plus3')
+                                .order-product-item__price 399 ₽
+                    .order-your-data.order-white-box
+                        h3.order-data-title Ваши данные
+                        .order-you-data-inputs
+                            .order-you-data-input
+                                label Имя и Фамилия
+                                input.inputs-lobarel(type="text" placeholder="Укажите имя и фамилию")
+                            .order-you-data-input
+                                label Телефон
+                                input.inputs-lobarel.mask-phone(type="text" placeholder="Укажите телефон")
+                            .order-you-data-input
+                                label Email
+                                input.inputs-lobarel(type="text" placeholder="Укажите email")
+                        .order-you-data-input
+                            label Адрес
+                            input.inputs-lobarel(type="text" placeholder="Укажите Ваш адрес")
+                    .order-compare-method.order-white-box
+                        h3.order-data-title Способ доставки
+                        ul.order-compare--list
+                            .order-compare--list-wrap
+                                li.order-compare--item Транспортная компания
+                                li.order-compare--item Стоимость доставки
+                            .order-compare--list-wrap2
+                                li.order-compare--item Срок доставки
+                        ul.order-compare--list-content
+                            label
+                                li.order-compare--item-content
+                                    .order-compare-item-checkbox.order-compare-item-check
+                                    input.order-compare-item-checkbox-input(type="radio" name="order_compare")
+                                    .order-compare-item-checkbox__info
+                                        .compare-item-img-price
+                                            img.order-compare-item--icon(src="static/img/general/compare/compare_1.png")
+                                            .compare-price 215 ₽
+                                        .compare-day до 15 дней
+                            label
+                                li.order-compare--item-content
+                                    .order-compare-item-checkbox.order-compare-item-check
+                                    input.order-compare-item-checkbox-input(type="radio" name="order_compare")
+                                    .order-compare-item-checkbox__info
+                                        .compare-item-img-price
+                                            img.order-compare-item--icon(src="static/img/general/compare/compare_2.png")
+                                            .compare-price 300 ₽
+                                        .compare-day 2 - 3 дня
+                            label
+                                li.order-compare--item-content
+                                    .order-compare-item-checkbox.order-compare-item-check
+                                    input.order-compare-item-checkbox-input(type="radio" name="order_compare")
+                                    .order-compare-item-checkbox__info
+                                        .compare-item-img-price
+                                            img.order-compare-item--icon(src="static/img/general/compare/compare_3.png")
+                                            .compare-price.compare-price3 Уточнит менеджер при подтверждении заказа
+                                        .compare-day 2 - 4 дня
+                    .order-pay-method.order-white-box
+                        h3.order-data-title Способ оплаты
+                        .method-pay-wrap
+                            .method-pay-item
+                                label
+                                    .order-compare-item-checkbox.method-pay-item-check
+                                    input.order-compare-item-checkbox-input(type="radio" name="method_pay")
+                                    .method-pay-text
+                                        .method-pay-method Оплата при получении
+                                        span Наличными или картой
+                            .method-pay-item
+                                label
+                                    .order-compare-item-checkbox.method-pay-item-check
+                                    input.order-compare-item-checkbox-input(type="radio" name="method_pay")
+                                    .method-pay-text
+                                        .method-pay-method Банковской картой
+                                        span Оплата картой онлайн
+                            .method-pay-item
+                                label
+                                    .order-compare-item-checkbox.method-pay-item-check
+                                    input.order-compare-item-checkbox-input(type="radio" name="method_pay")
+                                    .method-pay-text
+                                        .method-pay-method Яндекс.Деньги
+                                        span Кэшбэк 5%
+                    .order-comment.order-white-box
+                        h3.order-data-title Комментарий к заказу
+                        .order-you-data-input
+                            label Комментарий
+                            textarea.preorder-textarea--input(cols="40" rows="5" placeholder="Оставьте комментарий к заказу...")
+
+
+            .order-right.order-stycky--content.col-lg-3
+                .order-stycky--content2
+                    .order-stycky.order-white-box
+                        h3.order-data-title.your-basket.your-basket--title Ваша корзина #[span 2 товара]
+                        .your-basket-product
+                            .your-basket-name Товары
+                            .your-basket-price 998 ₽
+                        .your-basket-product
+                            .your-basket-name Скидка
+                            .your-basket-price.red-price - 199 ₽
+                        .your-basket-product
+                            .your-basket-name Доставка
+                            .your-basket-price 199 ₽
+                        .your-basket-result Итого: #[span 998 ₽]
+                    button.harmonika-button-pinkblack(type="submit") Оформить заказ
+
+

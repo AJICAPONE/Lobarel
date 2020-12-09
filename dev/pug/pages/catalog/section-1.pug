@@ -1,0 +1,509 @@
+section.catalog
+    .container
+        .my-favorit
+            form.my-favorit-left.filter-left.col-lg-3
+                h3.filter-title Фильтр
+                .filter-choise-skin
+                    span Проблемная кожа
+                    .filter-choise-skin-close
+                        +icon('delete')
+                .filter-type-skin#filter-type-cream
+                    span.filter-section-title Тип кожи:
+                    ul.filter-type-skin-list
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_type")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Сухая
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_type")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Жирная кожа
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_type")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Нормальная кожа
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_type")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Проблемная кожа
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_type")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Чувствительная кожа
+                        .filter-show-all
+                            li.filter-type-skin-item
+                                label
+                                    input.filter-type--input(type="radio" name="filter_type")
+                                    .filter-type-select
+                                        .filter-type-dot
+                                        .filter-type-name Нормальная кожа
+                            li.filter-type-skin-item
+                                label
+                                    input.filter-type--input(type="radio" name="filter_type")
+                                    .filter-type-select
+                                        .filter-type-dot
+                                        .filter-type-name Проблемная кожа
+                            li.filter-type-skin-item
+                                label
+                                    input.filter-type--input(type="radio" name="filter_type")
+                                    .filter-type-select
+                                        .filter-type-dot
+                                        .filter-type-name Чувствительная кожа
+                        .filter-category-watch-all Показать все
+
+                .filter-type-skin#filter-effect-cream
+                    span.filter-section-title Эффект от крема:
+                    ul.filter-type-skin-list
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="checkbox" name="filter_type_1")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Увлажнение
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="checkbox" name="filter_type_2")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Уменьшение жирности
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="checkbox" name="filter_type_3")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Питание
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="checkbox" name="filter_type_4")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Тонус
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="checkbox" name="filter_type_5")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Защита
+                        .filter-show-all
+                            li.filter-type-skin-item
+                                label
+                                    input.filter-type--input(type="checkbox" name="filter_type_6")
+                                    .filter-type-select
+                                        .filter-type-dot
+                                        .filter-type-name Нормальная кожа
+                            li.filter-type-skin-item
+                                label
+                                    input.filter-type--input(type="checkbox" name="filter_type_7")
+                                    .filter-type-select
+                                        .filter-type-dot
+                                        .filter-type-name Проблемная кожа
+                            li.filter-type-skin-item
+                                label
+                                    input.filter-type--input(type="checkbox" name="filter_type_8")
+                                    .filter-type-select
+                                        .filter-type-dot
+                                        .filter-type-name Чувствительная кожа
+                        .filter-category-watch-all Показать все
+
+                .filter-type-skin#filter-price-cream
+                    span.filter-section-title Цена
+                    .filter-price--wrap
+                        .filter--price-js#filter-slider
+                        .filter--price--inputs
+                            .filter--price--from.filter--label-input
+                                input#hidden1.sliders-filters(name='1', type='text', data-index="0" placeholder="от 300")
+                            span.filter-price-to –
+                            .filter--price--to.filter--label-input
+                                input#hidden2.sliders-filters(name='2', type='text', data-index="1" placeholder="до 1 999")
+
+                .filter-type-skin#filter-year
+                    span.filter-section-title Возраст:
+                    ul.filter-type-skin-list
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_year")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name до 20
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_year")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name до 30
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_year")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name до 40
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_year")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name до 50
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_year")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Более 50
+                button.filter-button-submit(type="submit") Применить
+
+            .my-favorit-right.col-lg-9
+                .catalog-title-wrap
+                    .lobarel-tab-title Каталог
+                    .catalog-title-sort Показыать по: #[span.active 9] #[span 18] #[span 27]
+                    .mobile-count-product 23 товара
+                .my-favorit-count-sort
+                    span.my-favorit-count-sort-span 23 товара
+                    .mobile-catalog-filter-button
+                        .mobile-catalog-filter-button-icon
+                            +icon('filter')
+                        span Фильтр
+                    .my-favorit-sort-wrap
+                        .my-favorit-sort-wrap--wrapper
+                            span.my-favorit-sort-wrap-span Сортировать:
+                            select.test-catalog
+                                option(value="по названию") по названию
+                                option(value="по убыванию") по убыванию
+                                option(value="по цене") по цене
+
+                .mobile--list-product.catalog-products-list.row
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                            .mobile-price-rating-price
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                                .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                                .slider-podoidut-price-pay
+                                    .slider-podoidut-price 399 ₽
+                            .mobile-price-favourite-basket
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                            .mobile-price-rating-price
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                                .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                                .slider-podoidut-price-pay
+                                    .slider-podoidut-price 399 ₽
+                            .mobile-price-favourite-basket
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                .slider-podoidut-pay
+                                    +icon('basket')
+
+
+                .my-favorit--list-product.catalog-products-list.row
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                            .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                            .slider-podoidut-price-pay
+                                .slider-podoidut-price 399 ₽
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                    .col-xl-4.col-lg-6col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                            .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                            .slider-podoidut-price-pay
+                                .slider-podoidut-price 399 ₽
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                            .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                            .slider-podoidut-price-pay
+                                .slider-podoidut-price 399 ₽
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                            .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                            .slider-podoidut-price-pay
+                                .slider-podoidut-price 399 ₽
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                            .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                            .slider-podoidut-price-pay
+                                .slider-podoidut-price 399 ₽
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                            .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                            .slider-podoidut-price-pay
+                                .slider-podoidut-price 399 ₽
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                            .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                            .slider-podoidut-price-pay
+                                .slider-podoidut-price 399 ₽
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                            .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                            .slider-podoidut-price-pay
+                                .slider-podoidut-price 399 ₽
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                    .col-xl-4.col-lg-6.col-md-6.col-sm-6
+                        .poroidut-slider-item.my-favourite--item-product
+                            .poroidut-slider-item--link
+                                a(href="/")
+                                    .img-slider-podoidut(style="background-image: url('static/img/general/search/product1.png')")
+                                .poroidut-slider-item--favoirite
+                                    +icon('favourite')
+                                a.poroidut-slider-item--name(href="/") Крем для ног
+                                    span "Lobarel"
+                            .slider-podoidut-rating(data-rating="5" readonly="readonly")
+                            .slider-podoidut-price-pay
+                                .slider-podoidut-price 399 ₽
+                                .slider-podoidut-pay
+                                    +icon('basket')
+                .harmonika-button-pinkblack.w-170.m-0-auto Показать еще
+
+    .catalog-filter-fixed
+        form.catalog-filter-fixed--left.filter-left.col-lg-3
+            .mobile-filter-title-close
+                h3.filter-title Фильтр
+                .mobile-filter-title-close-button
+                    +icon('delete')
+            .filter-choise-skin
+                span Проблемная кожа
+                .filter-choise-skin-close
+                    +icon('delete')
+            .filter-type-skin#filter-type-cream
+                span.filter-section-title Тип кожи:
+                ul.filter-type-skin-list
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_type")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Сухая
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_type")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Жирная кожа
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_type")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Нормальная кожа
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_type")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Проблемная кожа
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_type")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Чувствительная кожа
+                    .filter-show-all
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_type")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Нормальная кожа
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_type")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Проблемная кожа
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="radio" name="filter_type")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Чувствительная кожа
+                    .filter-category-watch-all Показать все
+
+            .filter-type-skin#filter-effect-cream
+                span.filter-section-title Эффект от крема:
+                ul.filter-type-skin-list
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="checkbox" name="filter_type_1")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Увлажнение
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="checkbox" name="filter_type_2")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Уменьшение жирности
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="checkbox" name="filter_type_3")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Питание
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="checkbox" name="filter_type_4")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Тонус
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="checkbox" name="filter_type_5")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Защита
+                    .filter-show-all
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="checkbox" name="filter_type_6")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Нормальная кожа
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="checkbox" name="filter_type_7")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Проблемная кожа
+                        li.filter-type-skin-item
+                            label
+                                input.filter-type--input(type="checkbox" name="filter_type_8")
+                                .filter-type-select
+                                    .filter-type-dot
+                                    .filter-type-name Чувствительная кожа
+                    .filter-category-watch-all Показать все
+
+            .filter-type-skin#filter-price-cream-mobile
+                span.filter-section-title Цена
+                .filter-price--wrap
+                    .filter--price-js#filter-slider_2
+                    .filter--price--inputs
+                        .filter--price--from.filter--label-input
+                            input#hidden1_2.sliders-filters(name='1', type='text', data-index="0" placeholder="от 300")
+                        span.filter-price-to –
+                        .filter--price--to.filter--label-input
+                            input#hidden2_2.sliders-filters(name='2', type='text', data-index="1" placeholder="до 1 999")
+
+            .filter-type-skin#filter-year
+                span.filter-section-title Возраст:
+                ul.filter-type-skin-list
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_year")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name до 20
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_year")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name до 30
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_year")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name до 40
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_year")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name до 50
+                    li.filter-type-skin-item
+                        label
+                            input.filter-type--input(type="radio" name="filter_year")
+                            .filter-type-select
+                                .filter-type-dot
+                                .filter-type-name Более 50
+            button.filter-button-submit(type="submit") Применить

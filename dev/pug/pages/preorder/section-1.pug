@@ -1,0 +1,497 @@
+section.baner-preorder(style="background-image: url('static/img/general/bg.png')")
+
+section.preorder
+    .container
+        h3.section-title2.mt-35px.white-section-title Заявка на индивидуальный крем
+        form#preorder-form.form-preorder
+            ul.preorder-step-list
+                li.preorder-step 1
+                li.preorder-step 2
+                li.preorder-step 3
+                li.preorder-step 4
+            .form-preorder-wrapper
+                .preorder-tab
+                    .preorder-title
+                        span.preorder-title-step Шаг 1
+                        span.preorder-title-name Выбор свойств крема
+                    .preorder-radio-checkbox-wrap
+                        .preorder-radio-year Ваш возраст:
+                        .preorder-radio-inputs--wrapper.row#preorder_year
+                            .preorder-radio-inputs.col-lg-3.col-md-6.col-sm-6
+                                .preorder-radio-input-div
+                                    label
+                                        input.harmonika-preorder-input(type="radio" name="preorder_year")
+                                        .harmonika-input
+                                            .harmonika-input-dot
+                                            .harmonika-input-name Меньше 20
+                                .preorder-radio-input-div
+                                    label
+                                        input.harmonika-preorder-input(type="radio" name="preorder_year")
+                                        .harmonika-input
+                                            .harmonika-input-dot
+                                            .harmonika-input-name Меньше 30
+                            .preorder-radio-inputs.col-lg-3.col-sm-6
+                                .preorder-radio-input-div
+                                    label
+                                        input.harmonika-preorder-input(type="radio" name="preorder_year")
+                                        .harmonika-input
+                                            .harmonika-input-dot
+                                            .harmonika-input-name Меньше 40
+                                .preorder-radio-input-div
+                                    label
+                                        input.harmonika-preorder-input(type="radio" name="preorder_year")
+                                        .harmonika-input
+                                            .harmonika-input-dot
+                                            .harmonika-input-name Меньше 50
+                            .preorder-radio-inputs.col-lg-3.col-sm-6
+                                .preorder-radio-input-div
+                                    label
+                                        input.harmonika-preorder-input(type="radio" name="preorder_year")
+                                        .harmonika-input
+                                            .harmonika-input-dot
+                                            .harmonika-input-name Меньше 60
+                                .preorder-radio-input-div
+                                    label
+                                        input.harmonika-preorder-input(type="radio" name="preorder_year")
+                                        .harmonika-input
+                                            .harmonika-input-dot
+                                            .harmonika-input-name Больше 60
+
+                    .preorder-radio-checkbox-wrap
+                        .preorder-radio-year Тип крема:
+                        .preorder-radio-inputs--wrapper#preorder_type
+                            .preorder-radio-inputs.col-lg-3.col-sm-6
+                                .preorder-radio-input-div
+                                    label
+                                        input.harmonika-preorder-input(type="radio" name="preorder_type")
+                                        .harmonika-input
+                                            .harmonika-input-dot
+                                            .harmonika-input-name Плотный крем
+                            .preorder-radio-inputs.col-lg-3.col-sm-6
+                                .preorder-radio-input-div
+                                    label
+                                        input.harmonika-preorder-input(type="radio" name="preorder_type")
+                                        .harmonika-input
+                                            .harmonika-input-dot
+                                            .harmonika-input-name Легкий крем
+                    .preorder-price-result
+                        .preorder-price-result--wrapper
+                            .preorder-price-result-name Стоимость
+                        .preorder-price-result-price 299 ₽
+
+
+
+
+                .preorder-tab
+                    .preorder-title
+                        span.preorder-title-step Шаг 2
+                        span.preorder-title-name Выбор типа кожи
+
+                    .preorder-type--wrapper#preorder_type-skin
+                        .preorder-type-skin-radio.col-lg-3
+                            .preorder-radio-checkbox-wrap
+                                .preorder-radio-year Выберите тип кожи:
+                                select.preorder-test
+                                    option(data-type-skin="skin-1" value="Сухая кожа") Сухая кожа
+                                    option(data-type-skin="skin-2" value="Жирная кожа") Жирная кожа
+                                    option(data-type-skin="skin-3" value="Нормальная кожа") Нормальная кожа
+                                    option(data-type-skin="skin-4" value="Проблемная кожа") Проблемная кожа
+                                    option(data-type-skin="skin-5" value="Чувствительная кожа") Чувствительная кожа
+                                    option(data-type-skin="skin-6" value="Комбинированная кожа") Комбинированная кожа
+                                    option(data-type-skin="skin-7" value="Возрастная кожа") Возрастная кожа
+                                    option(data-type-skin="skin-8" value="Поврежденная кожа") Поврежденная кожа
+
+
+
+                            .preorder-radio-inputs--wrapper
+                                .preorder-radio-inputs.w-270
+                                    .preorder-radio-input-div.active(data-type-skin="skin-1")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_type_skin" data-type="checked" checked)
+                                            .harmonika-input.checked
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Сухая кожа
+                                    .preorder-radio-input-div(data-type-skin="skin-2")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_type_skin")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Жирная кожа
+                                    .preorder-radio-input-div(data-type-skin="skin-3")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_type_skin")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Нормальная кожа
+                                    .preorder-radio-input-div(data-type-skin="skin-4")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_type_skin")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Проблемная кожа
+                                    .preorder-radio-input-div(data-type-skin="skin-5")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_type_skin")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Чувствительная кожа
+                                    .preorder-radio-input-div(data-type-skin="skin-6")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_type_skin")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Комбинированная кожа
+                                    .preorder-radio-input-div(data-type-skin="skin-7")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_type_skin")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Возрастная кожа
+                                    .preorder-radio-input-div(data-type-skin="skin-8")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_type_skin")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Поврежденная кожа
+                        .preorder-type-skin-info.p-0.col-lg-9
+                            .preorder-type-skin-info--wrapper.skin-1.active
+                                .preorder-type-skin-info-content.col-lg-9.col-md-9
+                                    .preorder-type-skin-info-title Сухая кожа
+                                    p.preorder-type-skin-info-text Сухая кожа тонкая, нежная. Поры кожи едва заметны. На ощупь кожа сухая, может ощущаться шелушение. При выраженной степени обезвоженности кожи – шелушение заметно сразу после умывания, особенно в области лба, щек. Иногда появляется шелушение кожи в конце дня
+                                    p.preorder-type-skin-info-text Сухая кожа быстро теряет тонус. Часто лицо выглядит уставшим.
+                                    p.preorder-type-skin-info-text При составлении рецепта крема для Сухой кожи отдайте предпочтение эффектам питания и увлажнения, выберите плотную текстуру крема. Если у Вас сухая и чувствительная кожа – выберите эффекты защиты или регенерации.
+                                .preorder-type-skin-info-img.col-lg-3.col-md-3(style='background-image: url("static/img/general/skin.png")')
+                            .preorder-type-skin-info--wrapper.skin-2
+                                .preorder-type-skin-info-content.col-lg-9.col-md-9
+                                    .preorder-type-skin-info-title Жирная кожа
+                                    p.preorder-type-skin-info-text Сухая кожа тонкая, нежная. Поры кожи едва заметны. На ощупь кожа сухая, может ощущаться шелушение. При выраженной степени обезвоженности кожи – шелушение заметно сразу после умывания, особенно в области лба, щек. Иногда появляется шелушение кожи в конце дня
+                                    p.preorder-type-skin-info-text Сухая кожа быстро теряет тонус. Часто лицо выглядит уставшим.
+                                    p.preorder-type-skin-info-text При составлении рецепта крема для Сухой кожи отдайте предпочтение эффектам питания и увлажнения, выберите плотную текстуру крема. Если у Вас сухая и чувствительная кожа – выберите эффекты защиты или регенерации.
+                                .preorder-type-skin-info-img.col-lg-3.col-md-3(style='background-image: url("static/img/general/skin.png")')
+                            .preorder-type-skin-info--wrapper.skin-3
+                                .preorder-type-skin-info-content.col-lg-9.col-md-9
+                                    .preorder-type-skin-info-title Нормальная кожа
+                                    p.preorder-type-skin-info-text Сухая кожа тонкая, нежная. Поры кожи едва заметны. На ощупь кожа сухая, может ощущаться шелушение. При выраженной степени обезвоженности кожи – шелушение заметно сразу после умывания, особенно в области лба, щек. Иногда появляется шелушение кожи в конце дня
+                                    p.preorder-type-skin-info-text Сухая кожа быстро теряет тонус. Часто лицо выглядит уставшим.
+                                    p.preorder-type-skin-info-text При составлении рецепта крема для Сухой кожи отдайте предпочтение эффектам питания и увлажнения, выберите плотную текстуру крема. Если у Вас сухая и чувствительная кожа – выберите эффекты защиты или регенерации.
+                                .preorder-type-skin-info-img.col-lg-3.col-md-3(style='background-image: url("static/img/general/skin.png")')
+                            .preorder-type-skin-info--wrapper.skin-4
+                                .preorder-type-skin-info-content.col-lg-9.col-md-9
+                                    .preorder-type-skin-info-title Проблемная кожа
+                                    p.preorder-type-skin-info-text Сухая кожа тонкая, нежная. Поры кожи едва заметны. На ощупь кожа сухая, может ощущаться шелушение. При выраженной степени обезвоженности кожи – шелушение заметно сразу после умывания, особенно в области лба, щек. Иногда появляется шелушение кожи в конце дня
+                                    p.preorder-type-skin-info-text Сухая кожа быстро теряет тонус. Часто лицо выглядит уставшим.
+                                    p.preorder-type-skin-info-text При составлении рецепта крема для Сухой кожи отдайте предпочтение эффектам питания и увлажнения, выберите плотную текстуру крема. Если у Вас сухая и чувствительная кожа – выберите эффекты защиты или регенерации.
+                                .preorder-type-skin-info-img.col-lg-3.col-md-3(style='background-image: url("static/img/general/skin.png")')
+                            .preorder-type-skin-info--wrapper.skin-5
+                                .preorder-type-skin-info-content.col-lg-9.col-md-9
+                                    .preorder-type-skin-info-title Чувствительная кожа
+                                    p.preorder-type-skin-info-text Сухая кожа тонкая, нежная. Поры кожи едва заметны. На ощупь кожа сухая, может ощущаться шелушение. При выраженной степени обезвоженности кожи – шелушение заметно сразу после умывания, особенно в области лба, щек. Иногда появляется шелушение кожи в конце дня
+                                    p.preorder-type-skin-info-text Сухая кожа быстро теряет тонус. Часто лицо выглядит уставшим.
+                                    p.preorder-type-skin-info-text При составлении рецепта крема для Сухой кожи отдайте предпочтение эффектам питания и увлажнения, выберите плотную текстуру крема. Если у Вас сухая и чувствительная кожа – выберите эффекты защиты или регенерации.
+                                .preorder-type-skin-info-img.col-lg-3.col-md-3(style='background-image: url("static/img/general/skin.png")')
+                            .preorder-type-skin-info--wrapper.skin-6
+                                .preorder-type-skin-info-content.col-lg-9.col-md-9
+                                    .preorder-type-skin-info-title Комбинированная кожа
+                                    p.preorder-type-skin-info-text Сухая кожа тонкая, нежная. Поры кожи едва заметны. На ощупь кожа сухая, может ощущаться шелушение. При выраженной степени обезвоженности кожи – шелушение заметно сразу после умывания, особенно в области лба, щек. Иногда появляется шелушение кожи в конце дня
+                                    p.preorder-type-skin-info-text Сухая кожа быстро теряет тонус. Часто лицо выглядит уставшим.
+                                    p.preorder-type-skin-info-text При составлении рецепта крема для Сухой кожи отдайте предпочтение эффектам питания и увлажнения, выберите плотную текстуру крема. Если у Вас сухая и чувствительная кожа – выберите эффекты защиты или регенерации.
+                                .preorder-type-skin-info-img.col-lg-3.col-md-3(style='background-image: url("static/img/general/skin.png")')
+                            .preorder-type-skin-info--wrapper.skin-7
+                                .preorder-type-skin-info-content.col-lg-9.col-md-9
+                                    .preorder-type-skin-info-title Возрастная кожа
+                                    p.preorder-type-skin-info-text Сухая кожа тонкая, нежная. Поры кожи едва заметны. На ощупь кожа сухая, может ощущаться шелушение. При выраженной степени обезвоженности кожи – шелушение заметно сразу после умывания, особенно в области лба, щек. Иногда появляется шелушение кожи в конце дня
+                                    p.preorder-type-skin-info-text Сухая кожа быстро теряет тонус. Часто лицо выглядит уставшим.
+                                    p.preorder-type-skin-info-text При составлении рецепта крема для Сухой кожи отдайте предпочтение эффектам питания и увлажнения, выберите плотную текстуру крема. Если у Вас сухая и чувствительная кожа – выберите эффекты защиты или регенерации.
+                                .preorder-type-skin-info-img.col-lg-3.col-md-3(style='background-image: url("static/img/general/skin.png")')
+                            .preorder-type-skin-info--wrapper.skin-8
+                                .preorder-type-skin-info-content.col-lg-9.col-md-9
+                                    .preorder-type-skin-info-title Поврежденная кожа
+                                    p.preorder-type-skin-info-text Сухая кожа тонкая, нежная. Поры кожи едва заметны. На ощупь кожа сухая, может ощущаться шелушение. При выраженной степени обезвоженности кожи – шелушение заметно сразу после умывания, особенно в области лба, щек. Иногда появляется шелушение кожи в конце дня
+                                    p.preorder-type-skin-info-text Сухая кожа быстро теряет тонус. Часто лицо выглядит уставшим.
+                                    p.preorder-type-skin-info-text При составлении рецепта крема для Сухой кожи отдайте предпочтение эффектам питания и увлажнения, выберите плотную текстуру крема. Если у Вас сухая и чувствительная кожа – выберите эффекты защиты или регенерации.
+                                .preorder-type-skin-info-img.col-lg-3.col-md-3(style='background-image: url("static/img/general/skin.png")')
+
+                    .preorder-price-result
+                        .preorder-price-result--wrapper
+                            .preorder-price-result-name Стоимость
+                        .preorder-price-result-price 299 ₽
+
+
+                .preorder-tab
+                    .preorder-title
+                        span.preorder-title-step Шаг 3
+                        span.preorder-title-name Выбор эффекта крема
+
+                    .preorder-type--wrapper#preorder_type-effect
+                        .preorder-type-skin-radio.col-lg-3
+                            .preorder-radio-checkbox-wrap
+                                .preorder-radio-year Выберите эффект:
+                                select.preorder-effect
+                                    option(data-effect="effect-1" value="Увлажнение") Увлажнение
+                                    option(data-effect="effect-2" value="Уменьшение жирности") Уменьшение жирности
+                                    option(data-effect="effect-3" value="Питание") Питание
+                                    option(data-effect="effect-4" value="Тонус") Тонус
+                                    option(data-effect="effect-5" value="Защита") Защита
+                                    option(data-effect="effect-6" value="Лифтинг") Лифтинг
+                                    option(data-effect="effect-7" value="Регенерация") Регенерация
+                                    option(data-effect="effect-8" value="Противовоспалительный") Противовоспалительный
+
+                            .preorder-radio-inputs--wrapper
+                                .preorder-radio-inputs.w-270
+                                    .preorder-radio-input-div.active(data-effect="effect-1")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_effect" data-type="checked" checked)
+                                            .harmonika-input.checked
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Увлажнение
+                                    .preorder-radio-input-div(data-effect="effect-2")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_effect")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Уменьшение жирности
+                                    .preorder-radio-input-div(data-effect="effect-3")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_effect")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Питание
+                                    .preorder-radio-input-div(data-effect="effect-4")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_effect")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Тонус
+                                    .preorder-radio-input-div(data-effect="effect-5")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_effect")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Защита
+                                    .preorder-radio-input-div(data-effect="effect-6")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_effect")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Лифтинг
+                                    .preorder-radio-input-div(data-effect="effect-7")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_effect")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Регенерация
+                                    .preorder-radio-input-div(data-effect="effect-8")
+                                        label
+                                            input.harmonika-preorder-input(type="radio" name="preorder_effect")
+                                            .harmonika-input
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Противовоспалительный
+                        .preorder-type-skin-info.p-0.col-lg-9
+                            .preorder-type-skin-info--wrapper.effect-1.active
+                                .preorder-type-skin-info-content.col-lg-12
+                                    .preorder-type-skin-info-title Увлажнение
+                                    p.preorder-type-skin-info-text Увлажняющий эффект крема достигается за счет восстановления естественного баланса воды и липидов в поверхностных слоях кожи. Крем придаст коже гладкость, мягкость и эластичность, устранит шелушение.
+                                    p.preorder-type-skin-info-text.mb-5 Наиболее интенсивное увлажняющее действие крема достигается при эффекте увлажнения более 30%.
+                                    .preorder-type-effect--title Выберите компоненты с максимальным увлажняющим действием:
+                                    p.preorder-type-skin-info-text гиалуроновая кислота, аллантоин, экстракт алоэ вера, экстракт водорослей, фитостерины, глицерин растительный
+                            .preorder-type-skin-info--wrapper.effect-2
+                                .preorder-type-skin-info-content.col-lg-12
+                                    .preorder-type-skin-info-title Уменьшение жирности
+                                    p.preorder-type-skin-info-text Увлажняющий эффект крема достигается за счет восстановления естественного баланса воды и липидов в поверхностных слоях кожи. Крем придаст коже гладкость, мягкость и эластичность, устранит шелушение.
+                                        p.preorder-type-skin-info-text.mb-5 Наиболее интенсивное увлажняющее действие крема достигается при эффекте увлажнения более 30%.
+                                        .preorder-type-effect--title Выберите компоненты с максимальным увлажняющим действием:
+                                        p.preorder-type-skin-info-text гиалуроновая кислота, аллантоин, экстракт алоэ вера, экстракт водорослей, фитостерины, глицерин растительный
+                            .preorder-type-skin-info--wrapper.effect-3
+                                .preorder-type-skin-info-content.col-lg-12
+                                    .preorder-type-skin-info-title Питание
+                                    p.preorder-type-skin-info-text Увлажняющий эффект крема достигается за счет восстановления естественного баланса воды и липидов в поверхностных слоях кожи. Крем придаст коже гладкость, мягкость и эластичность, устранит шелушение.
+                                        p.preorder-type-skin-info-text.mb-5 Наиболее интенсивное увлажняющее действие крема достигается при эффекте увлажнения более 30%.
+                                        .preorder-type-effect--title Выберите компоненты с максимальным увлажняющим действием:
+                                        p.preorder-type-skin-info-text гиалуроновая кислота, аллантоин, экстракт алоэ вера, экстракт водорослей, фитостерины, глицерин растительный
+                            .preorder-type-skin-info--wrapper.effect-4
+                                .preorder-type-skin-info-content.col-lg-12
+                                    .preorder-type-skin-info-title Тонус
+                                    p.preorder-type-skin-info-text Увлажняющий эффект крема достигается за счет восстановления естественного баланса воды и липидов в поверхностных слоях кожи. Крем придаст коже гладкость, мягкость и эластичность, устранит шелушение.
+                                        p.preorder-type-skin-info-text.mb-5 Наиболее интенсивное увлажняющее действие крема достигается при эффекте увлажнения более 30%.
+                                        .preorder-type-effect--title Выберите компоненты с максимальным увлажняющим действием:
+                                        p.preorder-type-skin-info-text гиалуроновая кислота, аллантоин, экстракт алоэ вера, экстракт водорослей, фитостерины, глицерин растительный
+                            .preorder-type-skin-info--wrapper.effect-5
+                                .preorder-type-skin-info-content.col-lg-12
+                                    .preorder-type-skin-info-title Защита
+                                    p.preorder-type-skin-info-text Увлажняющий эффект крема достигается за счет восстановления естественного баланса воды и липидов в поверхностных слоях кожи. Крем придаст коже гладкость, мягкость и эластичность, устранит шелушение.
+                                        p.preorder-type-skin-info-text.mb-5 Наиболее интенсивное увлажняющее действие крема достигается при эффекте увлажнения более 30%.
+                                        .preorder-type-effect--title Выберите компоненты с максимальным увлажняющим действием:
+                                        p.preorder-type-skin-info-text гиалуроновая кислота, аллантоин, экстракт алоэ вера, экстракт водорослей, фитостерины, глицерин растительный
+                            .preorder-type-skin-info--wrapper.effect-6
+                                .preorder-type-skin-info-content.col-lg-12
+                                    .preorder-type-skin-info-title Лифтинг
+                                    p.preorder-type-skin-info-text Увлажняющий эффект крема достигается за счет восстановления естественного баланса воды и липидов в поверхностных слоях кожи. Крем придаст коже гладкость, мягкость и эластичность, устранит шелушение.
+                                        p.preorder-type-skin-info-text.mb-5 Наиболее интенсивное увлажняющее действие крема достигается при эффекте увлажнения более 30%.
+                                        .preorder-type-effect--title Выберите компоненты с максимальным увлажняющим действием:
+                                        p.preorder-type-skin-info-text гиалуроновая кислота, аллантоин, экстракт алоэ вера, экстракт водорослей, фитостерины, глицерин растительный
+                            .preorder-type-skin-info--wrapper.effect-7
+                                .preorder-type-skin-info-content.col-lg-12
+                                    .preorder-type-skin-info-title Регенерация
+                                    p.preorder-type-skin-info-text Увлажняющий эффект крема достигается за счет восстановления естественного баланса воды и липидов в поверхностных слоях кожи. Крем придаст коже гладкость, мягкость и эластичность, устранит шелушение.
+                                        p.preorder-type-skin-info-text.mb-5 Наиболее интенсивное увлажняющее действие крема достигается при эффекте увлажнения более 30%.
+                                        .preorder-type-effect--title Выберите компоненты с максимальным увлажняющим действием:
+                                        p.preorder-type-skin-info-text гиалуроновая кислота, аллантоин, экстракт алоэ вера, экстракт водорослей, фитостерины, глицерин растительный
+                            .preorder-type-skin-info--wrapper.effect-8
+                                .preorder-type-skin-info-content.col-lg-12
+                                    .preorder-type-skin-info-title Противовоспалительный
+                                    p.preorder-type-skin-info-text Увлажняющий эффект крема достигается за счет восстановления естественного баланса воды и липидов в поверхностных слоях кожи. Крем придаст коже гладкость, мягкость и эластичность, устранит шелушение.
+                                        p.preorder-type-skin-info-text.mb-5 Наиболее интенсивное увлажняющее действие крема достигается при эффекте увлажнения более 30%.
+                                        .preorder-type-effect--title Выберите компоненты с максимальным увлажняющим действием:
+                                        p.preorder-type-skin-info-text гиалуроновая кислота, аллантоин, экстракт алоэ вера, экстракт водорослей, фитостерины, глицерин растительный
+
+                    .preorder-price-result
+                        .preorder-price-result--wrapper
+                            .preorder-price-result-name Стоимость
+                        .preorder-price-result-price 299 ₽
+                .preorder-tab
+                    .preorder-title
+                        span.preorder-title-step Шаг 4
+                        span.preorder-title-name Выбор свойств крема
+
+                    .preorder-type--wrapper
+                        .preorder-type-skin-radio.col-lg-3
+                            .preorder-radio-inputs--wrapper#preorder_type-attr
+                                .preorder-radio-inputs.w-270
+                                    ul.preorder-cream-attr-list
+                                        .preorder-cream-attr-item--wrap
+                                            li.preorder-cream-attr-item
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Твердые масла
+                                            .preorder-attr-cream-list
+                                                .preorder-attr-cream-item.active(data-procent-attr="15")
+                                                    +icon('cocoa')
+                                                    span.preorder-attr-cream-name Масло какао
+                                                .preorder-attr-cream-item
+                                                    +icon('mango')
+                                                    span.preorder-attr-cream-name Масло манго
+                                                .preorder-attr-cream-item
+                                                    +icon('tukuma')
+                                                    span.preorder-attr-cream-name Масло тукума
+                                                .preorder-attr-cream-item
+                                                    +icon('kupu')
+                                                    span.preorder-attr-cream-name Масло купуасу
+                                                .preorder-attr-cream-item
+                                                    +icon('kokum')
+                                                    span.preorder-attr-cream-name Масло кокум
+                                                .preorder-attr-cream-item
+                                                    +icon('avocado')
+                                                    span.preorder-attr-cream-name Масло авокадо
+                                        .preorder-cream-attr-item--wrap
+                                            li.preorder-cream-attr-item
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Растительные экстракты
+                                            .preorder-attr-cream-list
+                                                .preorder-attr-cream-item
+                                                    +icon('cocoa')
+                                                    span.preorder-attr-cream-name Масло какао
+                                                .preorder-attr-cream-item
+                                                    +icon('cocoa')
+                                                    span.preorder-attr-cream-name Масло какао
+                                        .preorder-cream-attr-item--wrap
+                                            li.preorder-cream-attr-item
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Активные компоненты
+                                            .preorder-attr-cream-list
+                                                .preorder-attr-cream-item
+                                                    +icon('cocoa')
+                                                    span.preorder-attr-cream-name Масло какао
+                                                .preorder-attr-cream-item
+                                                    +icon('cocoa')
+                                                    span.preorder-attr-cream-name Масло какао
+                                        .preorder-cream-attr-item--wrap
+                                            li.preorder-cream-attr-item
+                                                .harmonika-input-dot
+                                                .harmonika-input-name Эфирные масла
+                                            .preorder-attr-cream-list
+                                                .preorder-attr-cream-item
+                                                    +icon('cocoa')
+                                                    span.preorder-attr-cream-name Масло какао
+                                                .preorder-attr-cream-item
+                                                    +icon('cocoa')
+                                                    span.preorder-attr-cream-name Масло какао
+
+
+                        .preorder-type-skin-info.preorder-type-skin-info--wrapp.p-0.col-lg-9
+                            .preorder-type-skin-info--wrapper.preorder-attr-cream--wrapper.col-lg-8.active
+                                .preorder-type-skin-info-content
+                                    .preorder-type-skin-info-title-gray Эффект: #[span Увлажнение, Питание, Против воспалений, Защита, Лифтинг]
+                                    p.preorder-type-skin-info-text Масло какао идеально подходит для сухой кожи. Масло питает, увлажняет кожу. Обладает легким липолитическим действием.
+                                    p.preorder-type-skin-info-text #[span Что такое:] 100% масло из семян шоколадного дерева
+                                    p.preorder-type-skin-info-text #[span INCI:] Theobroma cacao (Cocoa) Seed Butter
+                                    p.preorder-type-skin-info-text #[span Что такое:] растительный сквалан, незаменимые жирные кислоты, теобромины и кофеин – липолитики. Антиоксиданты, микроэлементы, растительные белки, жирорастворимые витамины. Фитостеролы с защитным действием
+                                    p.preorder-type-skin-info-text #[span Свойства:] создает защитную пленку на коже – препятствует обезвоживанию. Увлажняет, питает, смягчает кожу. Тонизирует и подтягивает кожу. Уменьшает отеки.
+                                    p.preorder-type-skin-info-text #[span Тип кожи:] сухая, возрастная, поврежденная кожа
+                                    p.preorder-type-skin-info-text #[span Влияние на свойства крема:] крем на основе масла какао будет плотным, питательным; масло какао придаст крему аромат шоколада
+
+                            .preorder-type-skin-info--wrapper.preorder-attr-cream--wrapper.col-lg-8
+                                .preorder-type-skin-info-content
+                                    .preorder-type-skin-info-title-gray Эффект: #[span Увлажнение, Питание, Против воспалений, Защита]
+                                    p.preorder-type-skin-info-text Масло какао идеально подходит для сухой кожи. Масло питает, увлажняет кожу. Обладает легким липолитическим действием.
+                                    p.preorder-type-skin-info-text #[span Что такое:] 100% масло из семян шоколадного дерева
+                                    p.preorder-type-skin-info-text #[span INCI:] Theobroma cacao (Cocoa) Seed Butter
+                                    p.preorder-type-skin-info-text #[span Что такое:] растительный сквалан, незаменимые жирные кислоты, теобромины и кофеин – липолитики. Антиоксиданты, микроэлементы, растительные белки, жирорастворимые витамины. Фитостеролы с защитным действием
+                                    p.preorder-type-skin-info-text #[span Свойства:] создает защитную пленку на коже – препятствует обезвоживанию. Увлажняет, питает, смягчает кожу. Тонизирует и подтягивает кожу. Уменьшает отеки.
+                                    p.preorder-type-skin-info-text #[span Тип кожи:] сухая, возрастная, поврежденная кожа
+                                    p.preorder-type-skin-info-text #[span Влияние на свойства крема:] крем на основе масла какао будет плотным, питательным; масло какао придаст крему аромат шоколада
+                            .preorder-type-skin-info--wrapper.preorder-attr-cream--wrapper.col-lg-8
+                                .preorder-type-skin-info-content
+                                    .preorder-type-skin-info-title-gray Эффект: #[span Увлажнение, Питание, Защита, Лифтинг]
+                                    p.preorder-type-skin-info-text Масло какао идеально подходит для сухой кожи. Масло питает, увлажняет кожу. Обладает легким липолитическим действием.
+                                    p.preorder-type-skin-info-text #[span Что такое:] 100% масло из семян шоколадного дерева
+                                    p.preorder-type-skin-info-text #[span INCI:] Theobroma cacao (Cocoa) Seed Butter
+                                    p.preorder-type-skin-info-text #[span Что такое:] растительный сквалан, незаменимые жирные кислоты, теобромины и кофеин – липолитики. Антиоксиданты, микроэлементы, растительные белки, жирорастворимые витамины. Фитостеролы с защитным действием
+                                    p.preorder-type-skin-info-text #[span Свойства:] создает защитную пленку на коже – препятствует обезвоживанию. Увлажняет, питает, смягчает кожу. Тонизирует и подтягивает кожу. Уменьшает отеки.
+                                    p.preorder-type-skin-info-text #[span Тип кожи:] сухая, возрастная, поврежденная кожа
+                                    p.preorder-type-skin-info-text #[span Влияние на свойства крема:] крем на основе масла какао будет плотным, питательным; масло какао придаст крему аромат шоколада
+
+                            .preorder-type-attr-highcharts.col-lg-4
+                                figure.highcharts-figure
+                                    #container
+                                ul.preorder-type-attr-highcharts-colors
+                                    li.preorder-type-attr-highcharts-color.color-5F691E
+                                        span.preorder-type-attr-highcharts-color-name Увлажнение
+                                        span.preorder-type-attr-highcharts-color-procent#data-hightcharts1(data-ht="31") 31%
+                                    li.preorder-type-attr-highcharts-color.color-B8CC3B
+                                        span.preorder-type-attr-highcharts-color-name Уменьшение жирности
+                                        span.preorder-type-attr-highcharts-color-procent#data-hightcharts2(data-ht="5") 5%
+                                    li.preorder-type-attr-highcharts-color.color-FCF4D7
+                                        span.preorder-type-attr-highcharts-color-name Против воспалений
+                                        span.preorder-type-attr-highcharts-color-procent#data-hightcharts3(data-ht="10") 10%
+                                    li.preorder-type-attr-highcharts-color.color-FAA04D
+                                        span.preorder-type-attr-highcharts-color-name Питание
+                                        span.preorder-type-attr-highcharts-color-procent#data-hightcharts4(data-ht="30") 30%
+                                    li.preorder-type-attr-highcharts-color.color-F2674B
+                                        span.preorder-type-attr-highcharts-color-name Тонус
+                                        span.preorder-type-attr-highcharts-color-procent#data-hightcharts5(data-ht="30") 30%
+                                    li.preorder-type-attr-highcharts-color.color-92B5D4
+                                        span.preorder-type-attr-highcharts-color-name Защита
+                                        span.preorder-type-attr-highcharts-color-procent#data-hightcharts6(data-ht="30") 30%
+                                    li.preorder-type-attr-highcharts-color.color-FAACA8
+                                        span.preorder-type-attr-highcharts-color-name Лифтинг
+                                        span.preorder-type-attr-highcharts-color-procent#data-hightcharts7(data-ht="30") 30%
+
+
+
+                    .preorder-radio-checkbox-wrap.preorder-input-label--title
+                        .preorder-radio-year Есть ли у Вас аллергия:
+                        select.test
+                            option(value="Укажите, есть ли у Вас какие-либо аллергисеские реакции") Укажите, есть ли у Вас какие-либо аллергисеские реакции
+                            option(value="Аллергия на пыль") Аллергия на пыль
+                    .preorder-radio-checkbox-wrap
+                        .preorder-radio-year Ваши комментарии:
+                        textarea.preorder-textarea--input(cols="40" rows="5" placeholder="Укажите, дополнительные пожелания")
+                    .preorder-price-result
+                        .preorder-price-result--wrapper.preorder-added-result.row
+                            .preorder-price-result-name Стоимость:
+                            input.preorder-added-item-input(type="hidden" name="attr_all_cream")
+
+                        .preorder-price-result-price 299 ₽
+
+                .preorder-buttons-form.harmonika-buttons
+                    button.harmonika-button-gray.w-170.mrh-30#prevBtn(type='button' onclick='nextPrev(-1)') Назад
+                    button.harmonika-button-pinkblack.w-170#nextBtn(type='button' onclick='nextPrev(1)') Далее

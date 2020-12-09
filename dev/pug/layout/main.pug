@@ -1,0 +1,33 @@
+include ../mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1 maximum-scale=1.0, user-scalable=no" )
+		meta(name="keywords" content="")
+
+		link(rel="stylesheet" type='text/css' href="static/css/main.css")
+		link(rel="stylesheet" type='text/css' href="static/css/girl-main-page.css")
+		link(rel="stylesheet" type='text/css' href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/black-tie/jquery-ui.min.css")
+
+		//script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+	body(class=pageClass)
+		.wrapper
+			include ../modules/header
+			.content
+				block content
+			include ../modules/footer
+		script(src="static/js/jquery.js")
+		script(src="static/js/libs.min.js")
+		script(src="static/js/main.js")
+		script(src="static/js/jquery.hoverIntent.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+
+
+		block script

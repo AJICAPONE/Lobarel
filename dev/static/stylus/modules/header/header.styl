@@ -1,0 +1,517 @@
+.header-top
+  position relative
+  height 60px
+  background-color #F2F2F2
+  .container
+    height 100%
+
+.header-top--nav
+  display flex
+  align-items center
+  justify-content space-between
+  height 100%
+.header-top--list
+  display flex
+  align-items center
+  height 100%
+.header-top__item
+  font-family 'Roboto 400',sans-serif
+  text-align center
+  margin-right 20px
+.header-top__item--bold
+  font-family 'Roboto 500',sans-serif
+
+  .header-top__item--link
+    color #283037
+.header-top__item--link
+  font-size 14px
+  text-decoration none !important
+  color #797E82
+  padding 13px
+  border-radius 10px
+  transition: all linear 0.2s;
+  &:hover
+    //color inherit
+    background-color: #faaca8;
+    color: #fff;
+    text-decoration: none;
+
+.header-top--phone
+  display flex
+  align-items center
+  text-decoration none !important
+  color #283037
+  &:hover
+    color inherit
+  .icon
+    size(20px)
+    margin-right 15px
+    fill #283037
+  span
+    font-family: 'Merriweather Bold',sans-serif;
+    font-size 15px
+
+.header-bottom
+  background-color #283037
+  height 100px
+  .container
+    height 100%
+
+.header-bottom--nav
+  display flex
+  height: 100%;
+  width 100%
+  align-items: center;
+
+.header-bottom__logo--link
+  margin-right 70px
+
+  .icon
+    size(70px)
+    fill #fff
+
+.header-bottom__catalog--wrap
+  position relative
+.header-bottom__catalog
+  display flex
+  position relative
+  align-items center
+  width 230px
+  height 56px
+  background: #FAACA8;
+  border-radius: 5px;
+  padding 14px 20px
+  cursor pointer
+  z-index 201
+
+  .icon-menu
+    size(28px)
+    fill #fff
+    margin-right 34px
+  .icon-down-arrow
+    size(22px)
+    fill #fff
+  span
+    font-family 'Merriweather Bold', sans-serif
+    font-size 15px
+    color #fff
+    text-transform uppercase
+    margin-right 33px
+.header-bottom__catalog.active .icon-down-arrow
+  transform rotate(180deg)
+
+.header-bottom__catalog--popup
+  display none
+  position absolute
+  right 0
+  left 0
+  top 51px
+  background-color #3D444B
+  z-index 200
+  border-radius: 0 0px 5px 5px;
+  padding-bottom: 5px;
+.header-bottom__logo--and--catalog
+  display flex
+  width 33.3%
+  align-items center
+  padding 0
+  margin-right 30px
+
+.header-bottom__search--and--attr
+  display flex
+  width 67.7%
+  align-items center
+  padding 0
+.header-fixed .header-bottom__search--and--attr
+  width max-content
+.header-bottom-search__form
+  width 100%
+  max-width 470px
+  margin-right 30px
+.header-input--wrap
+  position relative
+  display flex
+  align-items center
+  width 100%
+.header-input-search
+  width 100%
+  border none
+  border-radius 5px
+  background #3E454B
+  padding 20px 15px
+  color #fff
+  font-family 'Roboto 400', sans-serif
+  font-size 14px
+  height 56px
+  z-index 201
+.header-input-search.active
+  background #50575D
+.header-input-search::placeholder
+  color #B2B5B7
+.header-button-submit__search
+  position absolute
+  display block
+  right 0px
+  padding-right 12px
+  top 0
+  bottom 0
+  background-color transparent
+  border none
+  outline none
+  z-index 201
+
+  &:focus
+    outline none
+
+  .icon
+    size(26px)
+    fill #B2B5B7
+
+.header-bottom--attr__list
+  display flex
+  align-items center
+
+.header-bottom--attr__item
+  display flex
+  position relative
+  justify-content center
+  align-items center
+  background-color #3E454B
+  text-decoration none !important
+  border-radius 5px
+  width 70px
+  height 56px
+  margin-right 30px
+  cursor pointer
+  &:last-child
+    margin-right 0
+  .icon
+    size(30px)
+    fill #fff
+  .icon-favourite
+    fill: transparent;
+    stroke-width: 1.5px;
+    stroke: #fff;
+
+.header-bottom--attr-basket__count,.header-bottom--attr-favourite__count
+  position absolute
+  display flex
+  align-items center
+  justify-content center
+  font-family 'Roboto 500', sans-serif
+  font-size 12px
+  color #fff
+  border-radius 50%
+  right: 5px;
+  top: -8px;
+  background: #FAACA8;
+  box-shadow: 0px 0px 5px rgba(250, 172, 168, 0.55);
+  size(20px)
+  pointer-events none
+
+.search-popup
+  display none
+  background-color: #3D444B;
+  position: absolute;
+  width: 100%;
+  top: 51px;
+  border-radius: 0 0px 5px 5px;
+  padding-bottom: 5px;
+  z-index 200
+.search-popup--annotation--item
+  width 100%
+  padding-left 15px
+
+.search-popup--annotation--product--name
+  font-family 'Open Sans 400',sans-serif
+  font-size 12px
+  width 100%
+  color #fff
+.search-popup--annotation--product--price
+  color #FAACA8 !important
+  font-size 12px !important
+  font-family 'Oswald M',sans-serif !important
+.search-popup--annotation--item:last-child .search-popup--annotation--item--link
+  border-bottom none
+.search-popup--annotation--item--link
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+  height 100%
+  text-decoration none !important
+  padding: 15px 15px 15px 0px;
+  border-bottom 1px solid #50575D
+
+  .icon-search
+    size(17px)
+    fill #fff
+    margin-right 11px
+  .icon-down-arrow
+    size(14px)
+    transform rotate(-90deg)
+    fill #fff
+  span
+    font-family 'Open Sans 400',sans-serif
+    font-size 12px
+    width 100%
+    color #fff
+
+.search-popup--annotation--product
+  display flex
+  flex-direction column
+
+.search-popup-item--img
+  width 100%
+  max-width 55px
+
+
+.header-bottom__catalog--popup--item
+  display flex
+  align-items center
+  text-decoration none !important
+  padding 15px 10px
+  border-bottom 1px solid #50575D
+  &:hover
+    color inherit
+
+  .icon
+    size(19px)
+    fill #FAACA8
+    margin-right 15px
+  span
+    font-family 'Open Sans 600', sans-serif
+    color #fff
+    font-size 14px
+
+  &:last-child
+    border-bottom none
+  &:first-child
+    padding: 20px 10px 15px 10px;
+.header-top-lang-phone
+  display flex
+  align-items center
+  justify-content space-between
+.header-top-choise-lang
+  display flex
+  justify-content center
+  border-radius 7px
+  border 1.5px solid #DEDFDF
+  padding 6px 10px
+  height 40px
+  width 80px
+  cursor pointer
+  position relative
+
+  span
+    font-family 'Roboto 400',sans-serif
+    font-size 16px
+    color #283037
+    display flex
+    justify-content center
+    align-items center
+
+.header-top-lang
+  display flex
+  align-items center
+  justify-content center
+  background-size contain
+  width: 25px;
+  height: auto;
+  margin-right 10px
+  background-repeat no-repeat
+
+.lang-ru
+  background-image url('/static/img/general/lang/rus.png')
+
+.lang-eng
+  background-image url('/static/img/general/lang/eng.png')
+
+.lang-kir
+  background-image url('/static/img/general/lang/kir.png')
+
+.lang-kaz
+  background-image url('/static/img/general/lang/kaz.png')
+
+.lang-taj
+  background-image url('/static/img/general/lang/taj.png')
+
+.lang-uz
+  background-image url('/static/img/general/lang/uz.png')
+
+.header-top-choise-lang-wrap
+  display flex
+  position relative
+  margin-right: 35px;
+.header-top-choise-lang-list
+  position absolute
+  right 0
+  top 55px
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding 25px 20px
+  z-index 202
+  width 270px
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+  display none
+
+  &:before
+    content ''
+    position absolute
+    top -10px
+    right 30px
+    clip-path: polygon(50% 10%, 0% 100%, 100% 100%);
+    width: 14px;
+    height: 12px;
+    background-color #fff
+
+.header-top-choise-lang-item-img
+  width 25px
+  height 100%
+  margin-right 15px
+
+.header-top-choise-lang-item
+  display flex
+  margin-bottom 20px
+  cursor pointer
+
+  &:last-child
+    margin-bottom 0
+
+  span
+    font-family 'Roboto 400',sans-serif
+    font-size 16px
+    color #283037
+
+.header-fixed
+  position fixed
+  display none
+  top 0px
+  height 80px
+  right 0
+  left 0
+  background-color #fff
+  z-index 200
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+
+  .header-bottom__logo--and--catalog .icon
+    fill #283037
+  .header-bottom__logo--and--catalog
+    width max-content
+    margin 0
+  .header-bottom--attr-basket__count,.header-bottom--attr-favourite__count
+    right -6px
+
+  .header-bottom--attr__item
+    size(50px)
+    margin-right 20px
+    background-color #E9EAEB
+    &:last-child
+      margin-right 0
+    .icon
+      size(20px)
+      fill #283037
+    .icon-favourite
+      fill transparent
+      stroke #283037
+      stroke-width 2px
+
+
+
+.header-bottom-fixed-menu
+  display flex
+  align-items center
+  width 100%
+.header-bottom-fixed-menu-item
+  font-family 'Roboto 400',sans-serif
+  font-size 15px
+  color rgba(40, 48, 55, 0.61)
+  margin-right 10px
+  transition all linear .2s
+  padding 13px
+  border-radius 10px
+
+  &:last-child
+    margin-right 0
+
+  &:hover
+    background-color #FAACA8
+    color #fff
+    text-decoration none
+
+.harmonica-center
+  margin 0 auto
+  float none
+  text-shadow none
+  opacity 1
+
+.menu-fixed-top--overflow
+  padding 20px 0 0 0
+
+.search-popup--annotation--list
+  overflow-y scroll
+  height 100%
+  max-height 300px
+
+.search-popup--annotation--list::-webkit-scrollbar
+  width 0
+
+
+.header-fixed--product
+  display none
+
+.main-product-page
+  .header-bottom
+    background-color #fff
+  .header-bottom__logo--link .icon
+    fill #283037
+  .header-input-search
+    background #E9EAEB
+    color rgba(40, 48, 55, 0.6)
+  .header-bottom--attr__item
+    background-color #E9EAEB
+    .icon
+      fill #283037
+    .icon-favourite
+      fill: transparent;
+      stroke-width: 1.5px;
+      stroke: #283037;
+  .header-fixed--product
+    display none
+  .header-fixed-all-pages
+    display none
+
+.main-page .header-fixed-all-pages
+  .header-bottom__logo--link
+    margin-right 30px
+  .header-bottom__catalog--wrap
+    margin-right 54px
+    .icon
+      fill #fff
+  .header-bottom__catalog--popup--item
+    .icon
+      fill #FAACA8
+
+.header-fixed-page-main
+  z-index 202
+  .header-bottom__logo--and--catalog
+    margin-right 30px
+  .header-input-search
+    background #E9EAEB
+    color #283037
+    height 50px
+  .header-button-submit__search .icon
+    fill #283037
+    size(22px)
+  .header-bottom__catalog .icon-menu,.header-bottom__catalog .icon-down-arrow
+    fill #fff
+  .header-bottom__catalog--popup--item .icon
+    fill #FAACA8
+  .search-popup
+    top 45px
+
+
+.only-main-page .header-fixed-page-main
+  display none !important
+
+

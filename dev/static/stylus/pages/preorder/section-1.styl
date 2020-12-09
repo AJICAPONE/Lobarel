@@ -1,0 +1,561 @@
+.breadcrumb-list
+  display flex
+  align-items center
+
+.breadcrumb
+  background-color transparent
+  z-index 51
+
+.breadcrumb-item a
+  color #fff
+  font-family 'Roboto 400',sans-serif
+  font-size 14px
+
+.breadcrumb-item+.breadcrumb-item::before
+  color #fff
+
+.baner-preorder
+  position absolute
+  top 0
+  left 0
+  right 0
+  width 100%
+  height 600px
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+
+.section-title2
+  font-family 'Merriweather Bold',sans-serif
+  font-size 32px
+  text-align center
+
+.mt-35px
+  margin-top 35px
+  margin-bottom 60px
+
+
+
+
+.preorder-step-list
+  display flex
+  align-items center
+  justify-content center
+  margin-bottom 75px
+
+.preorder-step
+  display flex
+  align-items center
+  justify-content center
+  position relative
+  background-color #F9F9F9
+  size(28px)
+  border-radius 50%
+  margin-right 160px
+  font-family 'Merriweather Italic',sans-serif
+  font-size 18px
+  color rgba(40, 48, 55, 0.31)
+  transition all 1s ease
+  box-shadow 0px 0px 0 0px rgba(250, 172, 168, 0.31)
+
+  &:last-child
+    margin-right 0
+
+  &:before
+    content ''
+    position absolute
+    height 3px
+    display: block;
+    background: #eee;
+    width 160px
+    left 28px
+    background: linear-gradient(to left, #eee 50%, #FAACA8 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition all 1s ease
+
+.preorder-step:last-child:before
+  display none
+
+
+.preorder-step.active
+  background-color #FAACA8
+  box-shadow 0px 0px 0 3px rgba(250, 172, 168, 0.31)
+  color #fff
+
+
+.preorder-step.finish
+  background #FAACA8
+  color #fff
+
+  &:before
+    background-position: left bottom;
+
+.form-preorder-wrapper
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color #fff
+  padding 50px 30px
+
+.preorder-tab
+  display: none;
+
+
+.preorder-title
+  display flex
+  align-items center
+  justify-content center
+  margin-bottom 50px
+.preorder-title-step
+  font-family 'Merriweather Italic',sans-serif
+  font-size 24px
+  color #283037
+  margin-right 15px
+.preorder-title-name
+  font-size 24px
+  font-family 'Merriweather Italic',sans-serif
+  color #FAACA8
+
+.preorder-radio-checkbox-wrap
+  display block
+.preorder-radio-inputs--wrapper
+  display flex
+.preorder-radio-inputs
+  display flex
+  flex-direction column
+
+  &:first-child
+    margin-left -15px
+
+.harmonika-preorder-input
+  display none
+
+.harmonika-input
+  display flex
+  align-items center
+  background: rgba(40, 48, 55, 0.02);
+  border-radius: 5px;
+  padding 15px
+  margin-bottom 15px
+  cursor pointer
+
+
+.harmonika-input-name
+  font-family 'Merriweather Reg',sans-serif
+  font-size 14px
+  color rgba(40, 48, 55, 0.6)
+
+.preorder-radio-input-div label
+  width 100%
+  margin-bottom 0
+
+.preorder-radio-year
+  font-family 'Open Sans 600',sans-serif
+  font-size 12px
+  color #283037
+  margin-bottom 15px
+
+.harmonika-input-dot
+  background: #FBFBFB;
+  border 1px solid rgba(40, 48, 55, 0.1);
+  size(19px)
+  border-radius 50%
+  margin-right 15px
+  position relative
+  display flex
+  align-items center
+  justify-content center
+  opacity 1
+
+.harmonika-input.checked  .harmonika-input-dot
+  background transparent
+
+.harmonika-input.checked .harmonika-input-name
+  color #fff
+
+.harmonika-input.checked
+  background #283037
+.harmonika-input.checked  .harmonika-input-dot:before
+  content ''
+  position absolute
+  size(16px)
+  background #FAACA8
+  border-radius 50%
+  box-shadow 0px 0px 0px 3px rgba(250, 172, 168, 0.3)
+
+.preorder-price-result
+  display flex
+  justify-content space-between
+  align-items center
+  height 100%
+  min-height 75px
+  background-color #283037
+  margin 0 -30px
+  margin-top 45px
+  padding 0 30px
+  margin-bottom 60px
+
+.preorder-price-result-name,.preorder-price-result-price
+  font-family 'Merriweather Bold',sans-serif
+  font-size 20px
+  color #fff
+  text-align right
+  width 110px
+
+.form-preorder
+  margin 0 -30px
+
+.preorder-buttons-form
+  text-align center
+
+.w-170
+  width 170px
+
+.preorder
+  margin-bottom 120px
+
+.w-270
+  width 100%
+  min-width 270px
+
+.preorder-type--wrapper
+  display flex
+
+.preorder-type-skin-info-title
+  font-family 'Merriweather Bold',sans-serif
+  font-size 18px
+  color #283037
+  margin-bottom 20px
+
+.preorder-type-skin-info-text
+  font-family 'Open Sans 400',sans-serif
+  font-size 14px
+  margin-bottom 25px
+  color rgba(40, 48, 55, 0.61)
+
+  span
+    color #283037
+
+//#holder
+//  height: 400px;
+//  margin: -200px 0 0 -200px;
+//  width: 400px;
+//
+//
+//#holder {
+//  height: 270px;
+//  left: 50%;
+//  margin: 0 0 0 -320px;
+//  top: 0;
+//  width: 270px;
+//}
+
+
+
+
+
+.preorder-type-skin-info-img
+  background-size contain
+  background-repeat no-repeat
+.preorder-type-skin-info--wrapper
+  display none
+.preorder-type-skin-info--wrapper.active
+  display flex
+
+.preorder-type-effect--title
+  font-family 'Merriweather Bold',sans-serif
+  font-size 14px
+  color #283037
+  margin-bottom 15px
+
+.preorder-cream-attr-item--wrap
+  margin-bottom 15px
+.preorder-cream-attr-item
+  display: flex;
+  align-items: center;
+  background: rgba(40,48,55,0.02);
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+
+.preorder-cream-attr-item.checked
+  background: #283037;
+
+.preorder-cream-attr-item.checked .harmonika-input-dot
+  background: transparent;
+.preorder-cream-attr-item.checked .harmonika-input-dot:before
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #faaca8;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 3px rgba(250,172,168,0.3);
+
+.preorder-cream-attr-item.checked .harmonika-input-name
+  color #fff
+
+.preorder-attr-cream-list
+  display none
+  background: rgba(40,48,55,0.02);
+  border-radius: 5px;
+  margin-top -3px
+
+
+.preorder-attr-cream-item
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+
+  &:first-child
+    padding-top 18px
+
+  .icon
+    size(18px)
+    fill rgba(40, 48, 55, 0.61)
+    margin-right 10px
+.preorder-attr-cream-name
+  font-family 'Open Sans 600',sans-serif
+  font-size 13px
+  color rgba(40, 48, 55, 0.61)
+
+.preorder-attr-cream-item.choise-attr
+
+  .icon
+    fill #FAACA8
+  .preorder-attr-cream-name
+    color #FAACA8
+
+
+.preorder-price-result--wrapper
+  display flex
+  align-items center
+
+.preorder-price-result-name
+  margin-right 30px
+
+.preorder-added-item
+  display flex
+  align-items center
+  position relative
+  top 7.5px
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding 8px 15px
+  margin-right 15px
+  margin-bottom 15px
+
+  span
+    font-family 'Open Sans 400',sans-serif
+    font-size 13px
+    color #B2B5B7
+    margin-right 15px
+  .icon
+    size(12px)
+    fill #fff
+.preorder-delete-item
+  display flex
+  justify-content center
+  align-items center
+  cursor pointer
+
+.preorder-added-list
+  display flex
+  align-items center
+  overflow-x scroll
+
+
+.preorder-added-result
+  margin 0
+
+.preorder-type-skin-info-title-gray
+  font-family 'Merriweather Bold',sans-serif
+  font-size 16px
+  color #7E8387
+  margin-bottom 20px
+
+  span
+    color #283037
+
+ // =====================================  highcharts =================================//
+.highcharts-figure, .highcharts-data-table table {
+  min-width: 270px;
+  max-width: 270px;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #EBEBEB;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+.highcharts-title
+  display none
+.highcharts-credits
+  display none
+.preorder-type-skin-info--wrapp
+  display flex
+
+.preorder-type-attr-highcharts-color
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 15px
+
+.preorder-type-attr-highcharts-color-name
+  font-family 'Open Sans 600',sans-serif
+  font-size 12px
+  color #283037
+  margin-left 10px
+
+.preorder-type-attr-highcharts-color-procent
+  font-family 'Open Sans 600',sans-serif
+  font-size 12px
+  color rgba(40, 48, 55, 0.61)
+
+.color-B8CC3B
+  border-left 4px solid #B8CC3B
+
+.color-5F691E
+  border-left 4px solid #5F691E
+
+.color-FCF4D7
+  border-left 4px solid #FCF4D7
+
+.color-FAA04D
+  border-left 4px solid #FAA04D
+
+.color-F2674B
+  border-left 4px solid #F2674B
+
+.color-92B5D4
+  border-left 4px solid #92B5D4
+
+.color-FAACA8
+  border-left 4px solid #FAACA8
+
+
+.selectCF {
+  width: 100%;
+}
+.onCF li ul {
+  display: block;
+  margin-top: -3px;
+  z-index: 11;
+  background white
+}
+.select {
+  width: 100%;
+  position: relative;
+}
+.select-input {
+  position: relative;
+  background: rgba(40, 48, 55, 0.02);
+  border: 2px solid rgba(40, 48, 55, 0.03);
+  border-radius: 5px;
+  height: 47px;
+  width: 100%;
+  padding: 14px;
+  color: rgba(40, 48, 55, 0.61)
+  font-family: "Open Sans 400", sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  z-index: 17;
+}
+.partner-wrap-input .select-input {
+  height: 47px;
+  font-size: 14px;
+  z-index: 8;
+}
+.select-options {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 21;
+  display: none;
+  border-top: 0;
+}
+.select-options li {
+  font-size 14px
+  padding: 15px 22px;
+  background-color: #fff;
+  font-family: "Open Sans 400", sans-serif;
+  cursor: pointer;
+  color: #283037;
+  text-align: left;
+}
+.select-options li:last-child{
+  border-radius: 0px 0px 5px 5px;
+}
+.append-icon .icon {
+  position: absolute;
+  right: 14px;
+  width: 16px;
+  height: 12px;
+  fill: #283037;
+}
+.append-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0px;
+  z-index: 20;
+}
+.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.preorder-textarea--input
+  position: relative;
+  background: rgba(40,48,55,0.02);
+  border: 2px solid rgba(40,48,55,0.03);
+  border-radius: 5px;
+  width: 100%;
+  padding: 14px;
+  color: rgba(40,48,55,0.61);
+  font-family: "Open Sans 400", sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  outline none
+
+.preorder-textarea--input::placeholder
+  color: rgba(40, 48, 55, 0.61)
+
+.preorder-input-label--title
+  margin-bottom 20px
+
+
+
+

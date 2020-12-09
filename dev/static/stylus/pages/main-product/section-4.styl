@@ -1,0 +1,41 @@
+.after-before
+  padding 120px 0
+
+.after-before-wrapper
+  width 100%
+  max-width 730px
+  margin 0 auto
+
+.jx-knightlab
+  display none !important
+
+.after-before-img--wrapper
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position relative
+
+  &:before
+    content ''
+    position absolute
+    right: -45px;
+    top: -42px;
+    size(87px)
+    background-image url("/static/img/general/flower2.png")
+    background-size contain
+    background-repeat no-repeat
+    z-index 6
+
+  &:after
+    content ''
+    position absolute
+    left: -220px;
+    bottom: -100px;
+    width 468px
+    height 384px
+    background-image url("/static/img/general/pluw.png")
+    background-size contain
+    background-repeat no-repeat
+    z-index 4
+
+  .jx-slider
+    border-radius 10px

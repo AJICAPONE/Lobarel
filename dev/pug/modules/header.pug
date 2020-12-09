@@ -1,0 +1,518 @@
+header
+    .header-static
+        .header-top
+            .container
+                .header-top--nav
+                    ul.header-top--list
+                        li.header-top__item
+                            a.header-top__item--link(href="/") О нас
+                        li.header-top__item
+                            a.header-top__item--link(href="/") Контакты
+                        li.header-top__item
+                            a.header-top__item--link(href="/") Доставка и оплата
+                        li.header-top__item.header-top__item--bold
+                            a.header-top__item--link(href="/") Предзаказ
+                        li.header-top__item.header-top__item--bold
+                            a.header-top__item--link(href="/") Тест на тип кожи
+                    .header-top-lang-phone
+                        .header-top-choise-lang-wrap
+                            .header-top-choise-lang
+                                .header-top-lang.lang-ru
+                                span RU
+                            ul.header-top-choise-lang-list
+                                li.header-top-choise-lang-item(data-lang="lang-ru" data-lang-code="RU")
+                                    img.header-top-choise-lang-item-img(src="static/img/general/lang/rus.png")
+                                    span Русский
+                                li.header-top-choise-lang-item(data-lang="lang-eng" data-lang-code="EN")
+                                    img.header-top-choise-lang-item-img(src="static/img/general/lang/eng.png")
+                                    span Английский
+                                li.header-top-choise-lang-item(data-lang="lang-uz" data-lang-code="UZ")
+                                    img.header-top-choise-lang-item-img(src="static/img/general/lang/uz.png")
+                                    span Узбекский
+                                li.header-top-choise-lang-item(data-lang="lang-taj" data-lang-code="TG")
+                                    img.header-top-choise-lang-item-img(src="static/img/general/lang/taj.png")
+                                    span Таджикский
+                                li.header-top-choise-lang-item(data-lang="lang-kir" data-lang-code="KY")
+                                    img.header-top-choise-lang-item-img(src="static/img/general/lang/kir.png")
+                                    span Кыргызский
+                                li.header-top-choise-lang-item(data-lang="lang-kaz" data-lang-code="KK")
+                                    img.header-top-choise-lang-item-img(src="static/img/general/lang/kaz.png")
+                                    span Казахский
+
+
+                        a.header-top--phone(href="tel:89991234567")
+                            +icon('phone')
+                            span 8 (999) 123 45 67
+
+        .header-bottom
+            .container
+                .header-bottom--nav
+                    .header-bottom__logo--and--catalog
+                        a.header-bottom__logo--link(href="/")
+                            +icon('logo')
+                        .header-bottom__catalog--wrap
+                            .header-bottom__catalog
+                                +icon('menu')
+                                span Каталог
+                                +icon('down-arrow')
+                            .header-bottom__catalog--popup
+                                ul.header-bottom__catalog--popup--list
+                                    a.header-bottom__catalog--popup--item(href="/")
+                                        +icon('leg')
+                                        span Крем для ног
+                                    a.header-bottom__catalog--popup--item(href="/")
+                                        +icon('arm')
+                                        span Крем для рук
+                                    a.header-bottom__catalog--popup--item(href="/")
+                                        +icon('chin')
+                                        span Крем для лица
+                                    a.header-bottom__catalog--popup--item(href="/")
+                                        +icon('woman1')
+                                        span Крем для тела
+                                    a.header-bottom__catalog--popup--item(href="/")
+                                        +icon('woman2')
+                                        span Маски для волос
+                    .header-bottom__search--and--attr
+                        form.header-bottom-search__form
+                            .header-input--wrap
+                                input.header-input-search(type="text" placeholder="Поиск...")
+                                .search-popup
+                                    ul.search-popup--annotation--list
+                                        li.search-popup--annotation--item
+                                            a.search-popup--annotation--item--link(href="/")
+                                                +icon('search')
+                                                span Увлажняющий крем для рук
+                                                +icon('down-arrow')
+                                        li.search-popup--annotation--item
+                                            a.search-popup--annotation--item--link(href="/")
+                                                +icon('search')
+                                                span Увлажняющий крем для рук
+                                                +icon('down-arrow')
+                                        li.search-popup--annotation--item
+                                            a.search-popup--annotation--item--link(href="/")
+                                                .search-popup--annotation--product
+                                                    span.search-popup--annotation--product--name Увлажняющий крем для ног “Flora”
+                                                    span.search-popup--annotation--product--price 299 ₽
+                                                img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                        li.search-popup--annotation--item
+                                            a.search-popup--annotation--item--link(href="/")
+                                                .search-popup--annotation--product
+                                                    span.search-popup--annotation--product--name Увлажняющий крем для ног “Aralia”
+                                                    span.search-popup--annotation--product--price 399 ₽
+                                                img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                        li.search-popup--annotation--item
+                                            a.search-popup--annotation--item--link(href="/")
+                                                .search-popup--annotation--product
+                                                    span.search-popup--annotation--product--name Увлажняющий крем для ног “Galium”
+                                                    span.search-popup--annotation--product--price 299 ₽
+                                                img.search-popup-item--img(src="static/img/general/search/product1.png")
+
+                                button.header-button-submit__search(type="submit")
+                                    +icon('search')
+                        ul.header-bottom--attr__list
+                            .header-bottom--attr__item.header-bottom--attr__item--mobile
+                                +icon('search')
+                            .header-bottom--attr__item(data-toggle="modal" data-target="#modal-register")
+                                +icon('user')
+                            a.header-bottom--attr__item.header-bottom--attr--favourite(href="/")
+                                +icon('favourite')
+                                span.header-bottom--attr-favourite__count 3
+                            a.header-bottom--attr__item.header-bottom--attr--basket(href="/")
+                                +icon('basket')
+                                span.header-bottom--attr-basket__count 2
+                        .header-bottom--attr__item.header-bottom--attr__item-menu
+                            +icon('menu')
+                        .menu-fixed
+                            .menu-fixed--content
+                                .menu-fixed-top
+                                    a.header-bottom__logo--link(href="/")
+                                        +icon('logo')
+                                    .header-top-choise-lang-wrap
+                                        .header-top-choise-lang
+                                            .header-top-lang.lang-ru
+                                            span RU
+                                        ul.header-top-choise-lang-list
+                                            li.header-top-choise-lang-item(data-lang="lang-ru" data-lang-code="RU")
+                                                img.header-top-choise-lang-item-img(src="static/img/general/lang/rus.png")
+                                                span Русский
+                                            li.header-top-choise-lang-item(data-lang="lang-eng" data-lang-code="EN")
+                                                img.header-top-choise-lang-item-img(src="static/img/general/lang/eng.png")
+                                                span Английский
+                                            li.header-top-choise-lang-item(data-lang="lang-uz" data-lang-code="UZ")
+                                                img.header-top-choise-lang-item-img(src="static/img/general/lang/uz.png")
+                                                span Узбекский
+                                            li.header-top-choise-lang-item(data-lang="lang-taj" data-lang-code="TG")
+                                                img.header-top-choise-lang-item-img(src="static/img/general/lang/taj.png")
+                                                span Таджикский
+                                            li.header-top-choise-lang-item(data-lang="lang-kir" data-lang-code="KY")
+                                                img.header-top-choise-lang-item-img(src="static/img/general/lang/kir.png")
+                                                span Кыргызский
+                                            li.header-top-choise-lang-item(data-lang="lang-kaz" data-lang-code="KK")
+                                                img.header-top-choise-lang-item-img(src="static/img/general/lang/kaz.png")
+                                                span Казахский
+
+                                .menu-fixed-top--overflow
+                                    .header-bottom__catalog--wrap
+                                        .header-bottom__catalog
+                                            span Каталог
+                                            +icon('down-arrow')
+                                        .header-bottom__catalog--popup
+                                            ul.header-bottom__catalog--popup--list
+                                                a.header-bottom__catalog--popup--item(href="/")
+                                                    span Сухая
+                                                a.header-bottom__catalog--popup--item(href="/")
+                                                    span Жирная кожа
+                                                a.header-bottom__catalog--popup--item(href="/")
+                                                    span Нормальная кожа
+                                                a.header-bottom__catalog--popup--item(href="/")
+                                                    span Проблемная кожа
+                                                a.header-bottom__catalog--popup--item(href="/")
+                                                    span Чувствительная кожа
+                                    .menu-fixxed-footer
+                                        ul.menu-fixxed-footer--list
+                                            a.menu-fixxed-footer--item(href="/") О нас
+                                            a.menu-fixxed-footer--item(href="/") Контакты
+                                            a.menu-fixxed-footer--item(href="/") Доставка и оплата
+                                            a.menu-fixxed-footer--item.menu-fixed-footer-bold(href="/") Предзаказ
+                                            a.menu-fixxed-footer--item.menu-fixed-footer-bold(href="/") Тест на тип кожи
+                                        .menu-fixxed-footer--logo
+                                            +icon('logo')
+                                        a.menu-fixxed-footer--links(href="tel:89991234567") 8 (999) 123 45 67
+                                        a.menu-fixxed-footer--links(href="mailto:Info@harmonica.com") Info@harmonica.com
+                                        ul.menu-fixxed-footer--social
+                                            a.menu-fixxed-footer--social--item(href="/")
+                                                +icon('facebook')
+                                            a.menu-fixxed-footer--social--item(href="/")
+                                                +icon('instagram')
+                                            a.menu-fixxed-footer--social--item(href="/")
+                                                +icon('twitter')
+                                            a.menu-fixxed-footer--social--item(href="/")
+                                                +icon('whatsapp')
+                                        .footer-copyright
+                                            .container
+                                                .footer-copy-info © 2020 Lobarel’.ru Все права защищены.
+
+
+                        .search-absolute
+                            form.header-bottom-search__form
+                                .header-input--wrap
+                                    input.header-input-search(type="text" placeholder="Поиск...")
+                                    .search-popup
+                                        ul.search-popup--annotation--list
+                                            li.search-popup--annotation--item
+                                                a.search-popup--annotation--item--link(href="/")
+                                                    +icon('search')
+                                                    span Увлажняющий крем для рук
+                                                    +icon('down-arrow')
+                                            li.search-popup--annotation--item
+                                                a.search-popup--annotation--item--link(href="/")
+                                                    +icon('search')
+                                                    span Увлажняющий крем для рук
+                                                    +icon('down-arrow')
+                                            li.search-popup--annotation--item
+                                                a.search-popup--annotation--item--link(href="/")
+                                                    .search-popup--annotation--product
+                                                        span.search-popup--annotation--product--name Увлажняющий крем для ног “Flora”
+                                                        span.search-popup--annotation--product--price 299 ₽
+                                                    img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                            li.search-popup--annotation--item
+                                                a.search-popup--annotation--item--link(href="/")
+                                                    .search-popup--annotation--product
+                                                        span.search-popup--annotation--product--name Увлажняющий крем для ног “Aralia”
+                                                        span.search-popup--annotation--product--price 399 ₽
+                                                    img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                            li.search-popup--annotation--item
+                                                a.search-popup--annotation--item--link(href="/")
+                                                    .search-popup--annotation--product
+                                                        span.search-popup--annotation--product--name Увлажняющий крем для ног “Galium”
+                                                        span.search-popup--annotation--product--price 299 ₽
+                                                    img.search-popup-item--img(src="static/img/general/search/product1.png")
+
+                                    button.header-button-submit__search(type="submit")
+                                        +icon('search')
+
+
+
+    .header-fixed.header-fixed--product
+        .container
+            .header-bottom--nav
+                .header-bottom__logo--and--catalog
+                    a.header-bottom__logo--link(href="/")
+                        +icon('logo')
+                ul.header-bottom-fixed-menu
+                    a.header-bottom-fixed-menu-item.topLink(href="#scroll") Состав
+                    a.header-bottom-fixed-menu-item.topLink(href="#yakor-about-us") О нас
+                    a.header-bottom-fixed-menu-item.topLink(href="#yakor-effect") Эффект
+                    a.header-bottom-fixed-menu-item.topLink(href="#yakor-pay") О креме
+                    a.header-bottom-fixed-menu-item.topLink(href="#why-lobarel") Почему мы?
+                    a.header-bottom-fixed-menu-item.topLink(href="#scroll2") Сравнение
+                    a.header-bottom-fixed-menu-item.topLink(href="#yakor-reviews") Отзывы
+                    a.header-bottom-fixed-menu-item.topLink(href="#yakor-blog") Блог
+                .header-bottom__search--and--attr
+                    ul.header-bottom--attr__list
+                        .header-bottom--attr__item.header-bottom-fixed--search
+                            +icon('search')
+                        a.header-bottom--attr__item.header-bottom--attr--favourite(href="/")
+                            +icon('favourite')
+                            span.header-bottom--attr-favourite__count 3
+                        a.header-bottom--attr__item.header-bottom--attr--basket(href="/")
+                            +icon('basket')
+                            span.header-bottom--attr-basket__count 2
+                    .header-bottom--attr__item.header-bottom--attr__item-menu
+                        +icon('menu')
+                .search-absolute--fixed-menu
+                    form.header-bottom-search__form
+                        .header-input--wrap
+                            input.header-input-search(type="text" placeholder="Поиск...")
+                            .search-popup
+                                ul.search-popup--annotation--list
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            +icon('search')
+                                            span Увлажняющий крем для рук
+                                            +icon('down-arrow')
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            +icon('search')
+                                            span Увлажняющий крем для рук
+                                            +icon('down-arrow')
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            .search-popup--annotation--product
+                                                span.search-popup--annotation--product--name Увлажняющий крем для ног “Flora”
+                                                span.search-popup--annotation--product--price 299 ₽
+                                            img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            .search-popup--annotation--product
+                                                span.search-popup--annotation--product--name Увлажняющий крем для ног “Aralia”
+                                                span.search-popup--annotation--product--price 399 ₽
+                                            img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            .search-popup--annotation--product
+                                                span.search-popup--annotation--product--name Увлажняющий крем для ног “Galium”
+                                                span.search-popup--annotation--product--price 299 ₽
+                                            img.search-popup-item--img(src="static/img/general/search/product1.png")
+
+                            button.header-button-submit__search(type="submit")
+                                +icon('search')
+
+    .header-fixed.header-fixed-all-pages
+        .container
+            .header-bottom--nav
+                .header-bottom__logo--and--catalog
+                    a.header-bottom__logo--link(href="/")
+                        +icon('logo')
+                    .header-bottom__catalog--wrap
+                        .header-bottom__catalog.header-bottom__catalog--allpages
+                            +icon('menu')
+                            span Каталог
+                            +icon('down-arrow')
+                        .header-bottom__catalog--popup
+                            ul.header-bottom__catalog--popup--list
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('leg')
+                                    span Крем для ног
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('arm')
+                                    span Крем для рук
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('chin')
+                                    span Крем для лица
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('woman1')
+                                    span Крем для тела
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('woman2')
+                                    span Маски для волос
+                ul.header-bottom-fixed-menu
+                    a.header-bottom-fixed-menu-item(href="/") О нас
+                    a.header-bottom-fixed-menu-item(href="/") Почему мы?
+                    a.header-bottom-fixed-menu-item(href="/") Сравнение
+                    a.header-bottom-fixed-menu-item(href="/") Отзывы
+                    a.header-bottom-fixed-menu-item(href="/") Блог
+                .header-bottom__search--and--attr
+                    ul.header-bottom--attr__list
+                        .header-bottom--attr__item.header-bottom-fixed--search
+                            +icon('search')
+                        a.header-bottom--attr__item.header-bottom--attr--favourite(href="/")
+                            +icon('favourite')
+                            span.header-bottom--attr-favourite__count 3
+                        a.header-bottom--attr__item.header-bottom--attr--basket(href="/")
+                            +icon('basket')
+                            span.header-bottom--attr-basket__count 2
+                    .header-bottom--attr__item.header-bottom--attr__item-menu
+                        +icon('menu')
+                .search-absolute--fixed-menu
+                    form.header-bottom-search__form
+                        .header-input--wrap
+                            input.header-input-search(type="text" placeholder="Поиск...")
+                            .search-popup
+                                ul.search-popup--annotation--list
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            +icon('search')
+                                            span Увлажняющий крем для рук
+                                            +icon('down-arrow')
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            +icon('search')
+                                            span Увлажняющий крем для рук
+                                            +icon('down-arrow')
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            .search-popup--annotation--product
+                                                span.search-popup--annotation--product--name Увлажняющий крем для ног “Flora”
+                                                span.search-popup--annotation--product--price 299 ₽
+                                            img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            .search-popup--annotation--product
+                                                span.search-popup--annotation--product--name Увлажняющий крем для ног “Aralia”
+                                                span.search-popup--annotation--product--price 399 ₽
+                                            img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            .search-popup--annotation--product
+                                                span.search-popup--annotation--product--name Увлажняющий крем для ног “Galium”
+                                                span.search-popup--annotation--product--price 299 ₽
+                                            img.search-popup-item--img(src="static/img/general/search/product1.png")
+
+                            button.header-button-submit__search(type="submit")
+                                +icon('search')
+
+
+    .header-fixed.header-fixed-page-main
+        .container
+            .header-bottom--nav
+                .header-bottom__logo--and--catalog
+                    a.header-bottom__logo--link(href="/")
+                        +icon('logo')
+                    .header-bottom__catalog--wrap
+                        .header-bottom__catalog.header-bottom__catalog--allpages
+                            +icon('menu')
+                            span Каталог
+                            +icon('down-arrow')
+                        .header-bottom__catalog--popup
+                            ul.header-bottom__catalog--popup--list
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('leg')
+                                    span Крем для ног
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('arm')
+                                    span Крем для рук
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('chin')
+                                    span Крем для лица
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('woman1')
+                                    span Крем для тела
+                                a.header-bottom__catalog--popup--item(href="/")
+                                    +icon('woman2')
+                                    span Маски для волос
+                form.header-bottom-search__form
+                    .header-input--wrap
+                        input.header-input-search(type="text" placeholder="Поиск...")
+                        .search-popup
+                            ul.search-popup--annotation--list
+                                li.search-popup--annotation--item
+                                    a.search-popup--annotation--item--link(href="/")
+                                        +icon('search')
+                                        span Увлажняющий крем для рук
+                                        +icon('down-arrow')
+                                li.search-popup--annotation--item
+                                    a.search-popup--annotation--item--link(href="/")
+                                        +icon('search')
+                                        span Увлажняющий крем для рук
+                                        +icon('down-arrow')
+                                li.search-popup--annotation--item
+                                    a.search-popup--annotation--item--link(href="/")
+                                        .search-popup--annotation--product
+                                            span.search-popup--annotation--product--name Увлажняющий крем для ног “Flora”
+                                            span.search-popup--annotation--product--price 299 ₽
+                                        img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                li.search-popup--annotation--item
+                                    a.search-popup--annotation--item--link(href="/")
+                                        .search-popup--annotation--product
+                                            span.search-popup--annotation--product--name Увлажняющий крем для ног “Aralia”
+                                            span.search-popup--annotation--product--price 399 ₽
+                                        img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                li.search-popup--annotation--item
+                                    a.search-popup--annotation--item--link(href="/")
+                                        .search-popup--annotation--product
+                                            span.search-popup--annotation--product--name Увлажняющий крем для ног “Galium”
+                                            span.search-popup--annotation--product--price 299 ₽
+                                        img.search-popup-item--img(src="static/img/general/search/product1.png")
+
+                        button.header-button-submit__search(type="submit")
+                            +icon('search')
+
+                .header-bottom__search--and--attr
+                    ul.header-bottom--attr__list
+                        .header-bottom--attr__item.header-bottom-fixed--profile(data-toggle="modal" data-target="#modal-register")
+                            +icon('user')
+                        a.header-bottom--attr__item.header-bottom--attr--favourite(href="/")
+                            +icon('favourite')
+                            span.header-bottom--attr-favourite__count 3
+                        a.header-bottom--attr__item.header-bottom--attr--basket(href="/")
+                            +icon('basket')
+                            span.header-bottom--attr-basket__count 2
+                    .header-bottom--attr__item.header-bottom--attr__item-menu
+                        +icon('menu')
+                .search-absolute--fixed-menu
+                    form.header-bottom-search__form
+                        .header-input--wrap
+                            input.header-input-search(type="text" placeholder="Поиск...")
+                            .search-popup
+                                ul.search-popup--annotation--list
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            +icon('search')
+                                            span Увлажняющий крем для рук
+                                            +icon('down-arrow')
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            +icon('search')
+                                            span Увлажняющий крем для рук
+                                            +icon('down-arrow')
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            .search-popup--annotation--product
+                                                span.search-popup--annotation--product--name Увлажняющий крем для ног “Flora”
+                                                span.search-popup--annotation--product--price 299 ₽
+                                            img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            .search-popup--annotation--product
+                                                span.search-popup--annotation--product--name Увлажняющий крем для ног “Aralia”
+                                                span.search-popup--annotation--product--price 399 ₽
+                                            img.search-popup-item--img(src="static/img/general/search/product1.png")
+                                    li.search-popup--annotation--item
+                                        a.search-popup--annotation--item--link(href="/")
+                                            .search-popup--annotation--product
+                                                span.search-popup--annotation--product--name Увлажняющий крем для ног “Galium”
+                                                span.search-popup--annotation--product--price 299 ₽
+                                            img.search-popup-item--img(src="static/img/general/search/product1.png")
+
+                            button.header-button-submit__search(type="submit")
+                                +icon('search')
+
+    .mobile-panel-fixed
+        ul.mobile-panel-fixed--list
+            .mobile-panel-fixed--item.header-bottom-fixed--search.header-bottom--attr__item--mobile
+                +icon('search')
+                .mobile-panel-fixed--item--text Поиск
+            a.mobile-panel-fixed--item.mobile-favourite-icon(href="/my-favourite.html")
+                +icon('favourite')
+                .mobile-panel-fixed--item--text Желания
+            a.mobile-panel-fixed--item.mobile-menu-catalog(href="/catalog.html")
+                +icon('menu')
+                .mobile-panel-fixed--item--text Каталог
+            a.mobile-panel-fixed--item(href="/order.html")
+                +icon('basket')
+                .mobile-panel-fixed--item--text Корзина
+            .mobile-panel-fixed--item(data-toggle="modal" data-target="#modal-register")
+                +icon('user')
+                .mobile-panel-fixed--item--text Аккаунт
+

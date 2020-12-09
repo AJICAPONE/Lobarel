@@ -1,0 +1,109 @@
+.review-slider-title
+  display flex
+  align-items center
+  justify-content center
+  position relative
+  margin-bottom 40px
+
+.review-slider-all-review
+  position absolute
+  right 0
+  font-family 'Roboto 300',sans-serif
+  font-size 18px
+  color rgba(40, 48, 55, 0.4)
+  border-bottom 1px dashed rgba(40, 48, 55, 0.4)
+
+  &:hover
+    text-decoration none
+    color rgba(40, 48, 55, 0.4)
+
+.review-slider-item
+  display flex !important
+  justify-content center
+  align-items center
+  background-size contain
+  background-repeat no-repeat
+  width 100%
+  height 385px
+
+  &:before
+    content ''
+    position absolute
+    right 0
+    width 45%
+    height 100%
+    bottom 0
+    top 0
+    border-radius: 0px 10px 10px 0px;
+    background-color #283037
+
+.review-slider-js .slick-list
+  border-radius 10px
+
+.review-slider-info
+  position absolute
+  right 70px
+  width 630px
+  background-color #fff
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding 20px 30px
+
+.review-slider-info--categ
+  display block
+  margin-bottom 30px
+  font-family 'Roboto 400',sans-serif
+  font-size 14px
+  color rgba(40, 48, 55, 0.6)
+
+.review-slider--title
+  font-family 'Merriweather Bold',sans-serif
+  font-size 20px
+  color #283037
+  margin-bottom 15px
+
+.review-slider--text
+  font-family 'Roboto 400',sans-serif
+  font-size 15px
+  color rgba(40, 48, 55, 0.6)
+  margin-bottom 30px
+
+.review-slider--link
+  font-family 'Merriweather Bold',sans-serif
+  font-size 14px
+  color #FAACA8
+
+.review-slider-js--wrapper
+  position relative
+
+
+.review-slider-js-dots--wrap2 ul
+  display flex
+  align-items center
+
+.review-slider-js-dots--wrap2 li
+  background-color #fff
+  opacity 0.6
+  size(6px)
+  display block
+  margin-right 10px
+  border-radius 50%
+  cursor pointer
+  transition all linear .2s
+
+  &:last-child
+    margin-right 0
+
+.review-slider-js-dots--wrap2
+  pointer-events auto
+.review-slider-js-dots--wrap2 li.slick-active
+  background-color #fff
+  size(8px)
+  opacity 1
+  border-radius 50%
+
+.review-slider-js-dots--wrap2 li a
+  background-color #fff
+  size(100%)
+  display block
+  border-radius 50%

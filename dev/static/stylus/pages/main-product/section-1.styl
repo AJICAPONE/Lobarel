@@ -1,0 +1,261 @@
+.main-product-page
+  .header-bottom
+
+    .header-button-submit__search
+      .icon
+         fill #757A7F
+    .search-popup
+      background-color #fff
+    .search-popup--annotation--item--link span
+      color #283037
+    .search-popup--annotation--item--link .icon
+      fill #283037
+    .search-popup--annotation--item--link
+      border-bottom: 1px solid #E9EAEB
+
+  .header-bottom__catalog--popup
+    background-color #fff
+  .header-bottom__catalog--popup--item span
+    color #283037
+  .header-bottom__catalog--popup--item
+    border-bottom: 1px solid #e9eaeb;
+.main-product
+  overflow hidden
+.product-main-wrapper
+  display flex
+
+.product-left
+  background-color #FAACA8
+  position relative
+  display flex
+  flex-direction column
+  justify-content space-between
+  z-index 2
+  width 36%
+  padding 55px 0
+  padding-right 95px
+
+  &:before
+    content ''
+    background-color #FAACA8
+    left -100vw
+    top 0
+    bottom 0
+    position absolute
+    width 100vw
+    z-index -1
+
+
+
+.product-right
+  //background-color #283037
+  position relative
+  z-index 2
+  width 64%
+
+
+.product-left-title
+  font-family 'Merriweather Bold',sans-serif
+  font-size 22px
+  color #fff
+  margin-bottom 20px
+.product-left-text
+  font-family 'Roboto 400',sans-serif
+  font-size 14px
+  color #fff
+  margin-bottom 30px
+
+.product-left-price
+  font-family 'Merriweather Bold',sans-serif
+  font-size 30px
+  color #283037
+
+.product-left-social
+  display flex
+  align-items center
+
+.product-left-social-item
+  margin-right 40px
+  z-index 12
+  position relative
+
+  .icon
+    size(20px)
+    fill #fff
+
+.main-product
+  background-color #FAACA8
+.product-right-black
+  background-color #283037
+  position relative
+  height 50vh
+
+  &:before
+    content ''
+    background-color #283037
+    right -100vw
+    top 0
+    bottom 0
+    position absolute
+    width 100vw
+    z-index -1
+
+.product-right-menu-list
+  display flex
+  justify-content center
+  flex-direction column
+  margin 0 0 0 auto
+  width max-content
+  padding 80px 0
+  align-items flex-end
+  height 100%
+
+.product-right-menu-item
+  font-family 'Roboto 400',sans-serif
+  font-size 14px
+  color rgba(255, 255, 255, 0.3)
+  position relative
+  display flex
+  align-items center
+  text-align right
+  justify-content right
+  text-decoration none
+  margin-bottom 25px
+  height 22px
+  transition all linear .1s
+  text-transform uppercase
+
+  &:hover
+    text-decoration none
+    color #fff
+    font-size 16px
+    span
+      background-color #fff
+      opacity 1
+    span:after
+      display flex
+
+
+
+
+
+
+  &:nth-child(2)
+    margin-right 20px
+  &:nth-child(3)
+    margin-right 40px
+  &:nth-child(4)
+    margin-right 20px
+  &:last-child
+    margin-bottom 0
+
+  span
+    position relative
+    margin-left 10px
+    right 0
+    size(8px)
+    border-radius 50%
+    background-color rgba(255, 255, 255, 0.31)
+    display flex
+    justify-content center
+    align-items center
+
+    &:after
+      content ''
+      position absolute
+      display none
+      justify-content center
+      align-items center
+      box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.3);
+      size(16px)
+      border 1.2px solid #fff
+      border-radius 50%
+
+.product-right-white
+  background-color #fff
+  position relative
+  margin-left 180px
+  padding 40px 0
+  padding-left 120px
+  height 20vh
+
+  &:before
+    content ''
+    background-color #fff
+    right -100vw
+    top 0
+    bottom 0
+    position absolute
+    width 100vw
+    z-index -1
+
+.product-right-white--content
+  display flex
+  align-items center
+  absolute-center()
+  left 60%
+
+  .icon
+    size(100px)
+    margin-right 35px
+
+.product-right-white--info
+  display block
+
+.product-right-white--info__title
+  font-family 'Merriweather Bold',sans-serif
+  font-size 18px
+  color #283037
+  margin-bottom 15px
+
+.product-right-white--info-text
+  font-family 'Roboto 400',sans-serif
+  font-size 14px
+  color rgba(40, 48, 55, 0.61)
+  width 263px
+
+.product-picture-bg
+  position absolute
+  width: 100%;
+  height: 300px;
+  left: -143px;
+  bottom: -25px;
+  z-index 1
+
+.product-picture-bg2
+  position absolute
+  background-repeat no-repeat
+  background-size contain
+  width: 100%;
+  height: 100%
+  pointer-events none
+
+  &:before
+    content ''
+    position absolute
+    background-image url("/static/img/content/flower.png")
+    background-repeat no-repeat
+    background-size contain
+    width: 100%;
+    height: 480px;
+    z-index: -1;
+    display: block;
+    top: -223px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-71deg);
+    left: -140px;
+
+  &:after
+    content ''
+    position absolute
+    background-image url("/static/img/content/flower.png")
+    background-repeat no-repeat
+    background-size contain
+    width: 100%;
+    height: 440px;
+    z-index: -1;
+    display: block;
+    top: -45px;
+    transform: rotate(45deg);
+    right: -90px;

@@ -1,0 +1,67 @@
+section.my-room
+    .container
+        h3.section-title3.text-left Елизавета Боброва
+        .my-room-wrapper
+            .my-room-left.col-lg-3
+                .my-room-cabinet.order-white-box
+                    h3.order-data-title.your-basket.your-basket--title Личный кабинет
+                    ul.my-room-list
+                        a.my-room-item(href="/") Профиль
+                        a.my-room-item(href="/") Мои заказы
+                        a.my-room-item(href="/") Активные заказы
+                        a.my-room-item(href="/") Завершенные заказы
+                        a.my-room-item(href="/") Подписки
+                .my-room-exit Выйти
+            .my-room-right.col-lg-9
+                .my-room-cabinet.order-white-box
+                    h3.order-data-title Личная информация
+                    .order-you-data-inputs
+                        .order-you-data-input
+                            label Имя
+                            input.inputs-lobarel(type="text" placeholder="Елизавета")
+                        .order-you-data-input
+                            label Фамилия
+                            input.inputs-lobarel(type="text" placeholder="Боброва")
+                        .order-you-data-input
+                            label Дата рождения
+                            input.inputs-lobarel.mask-date(type="text" placeholder="01.06.1993")
+                .my-room-cabinet.order-white-box
+                    h3.order-data-title Контактная информация
+                    .order-you-data-inputs
+                        .order-you-data-input
+                            label Телефон
+                            input.inputs-lobarel.mask-phone(type="text")
+                        .order-you-data-input
+                            label Email
+                            input.inputs-lobarel(type="email")
+                .my-room-add-adresses
+                    .my-room-cabinet.order-white-box
+                        h3.order-data-title Адрес
+                        .order-you-data-input
+                            label Адрес
+                            input.inputs-lobarel(type="text")
+                        .order-you-data-inputs
+                            .order-you-data-input
+                                label Индекс
+                                input.inputs-lobarel(type="text")
+                            .order-you-data-input
+                                label Страна
+                                input.inputs-lobarel(type="text")
+                            .order-you-data-input
+                                label Регион
+                                input.inputs-lobarel(type="text")
+                .my-room-added-adress#add_append Добавить адрес
+
+                .my-room-cabinet.order-white-box
+                    h3.order-data-title Безопасность
+                    .order-you-data-inputs
+                        .order-you-data-input
+                            label Старый пароль
+                            input.inputs-lobarel(type="password")
+                        .order-you-data-input
+                            label Новый пароль
+                            input.inputs-lobarel(type="password")
+                        .order-you-data-input
+                            label Повторите пароль
+                            input.inputs-lobarel.mask-date(type="password")
+

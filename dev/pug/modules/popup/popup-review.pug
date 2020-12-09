@@ -1,0 +1,36 @@
+#add-review-modal-non-reg.modal.fade(tabindex='-1' role='dialog' aria-labelledby='modal-register' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        form.modal-content
+            .popup-header
+                button.close.popup-close(type='button' data-dismiss='modal' aria-label='Close')
+                    +icon('modal-close')
+                h3.popup-title.mb-4 Оставить отзыв
+                h4.popup-rev--title.mb-3 Ваша оценка:
+                .popup-review-rating
+                    #rateYo5.m-0-auto(data-rating="0")
+                    input.rateyo-hidden(type="hidden" name="rating_hidden" value="")
+            .popup-body
+                .popup-inputs--wrap
+                    .popup-review-non-auth
+                        .popup-inputs--item
+                            label Ваше имя и фамилия:
+                            input.popup-input(type="text" placeholder="Имя и фамилия...")
+                        .popup-review-input-avatar--wrap
+                            .popup-review-input-avatar
+                                +icon('paperclip')
+                                span Загрузить фото
+                                input.popup-input-review-avatar(type="file")
+
+                    .popup-input-review__wrap
+                        .popup-inputs--item
+                            label Email:
+                            input.popup-input(type="email" placeholder="Email...")
+                        .popup-inputs--item
+                            label Телефон:
+                            input.popup-input.mask-phone(type="text" placeholder="+7 ...")
+                    .popup-inputs--item
+                        label Отзыв:
+                        textarea.popup-input.popup-textarea-review(type="text" rows="5" placeholder="Оставьте свой отзыв...")
+            .popup-footer
+                button.harmonika-button-pinkblack.w-230(type="submit") Добавить отзыв
+

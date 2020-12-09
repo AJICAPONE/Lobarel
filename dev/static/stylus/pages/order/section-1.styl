@@ -1,0 +1,311 @@
+.order-page
+  .breadcrumb-item a
+    color rgba(40, 48, 55, 0.4)
+  .breadcrumb-item+.breadcrumb-item:before
+    color rgba(40, 48, 55, 0.4)
+  .content
+    background-color #E5E5E5
+.order-left
+  padding-left 0
+
+.order-stycky--content2
+  position sticky
+  top 100px
+  margin-bottom 10px
+
+.order-white-box
+  background-color #fff
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding 20px
+  margin-bottom: 20px;
+
+.order-product-item
+  display flex
+  align-items center
+  justify-content space-between
+.order-product-item--img-name
+  display flex
+  align-items center
+.order-product-item--name
+  font-family 'Merriweather Bold',sans-serif
+  font-size 15px
+  color #283037
+  width 100%
+  max-width 330px
+
+.order-product-item__img
+  width 120px
+  margin-right 30px
+
+.order-product-item__count
+  display flex
+  align-items center
+  justify-content space-between
+  width 90px
+  border: 1px solid rgba(40, 48, 55, 0.11);
+  border-radius: 5px;
+  font-family 'Roboto 500',sans-serif
+  font-size 14px
+  padding 9px 10px
+
+
+.order-product-item__count-price
+  display flex
+  align-items center
+.order-product-item__value
+  border none
+  background-color transparent
+  width 20px
+  text-align center
+  line-height 1
+
+.order-product-item--controls
+  cursor pointer
+
+  .icon
+    size(11px)
+    fill #283037
+.order-product-item__price
+  font-family 'Merriweather Bold',sans-serif
+  font-size 16px
+  color #283037
+  width 100px
+  text-align center
+  margin-left 40px
+
+//.order-product-item__minus
+//  .icon
+//    fill rgba(40, 48, 55, 0.11)
+
+.order-count-last
+
+  .icon
+    fill rgba(40, 48, 55, 0.11)
+
+.order-data-title
+  font-family 'Merriweather Bold',sans-serif
+  font-size 18px
+  color #283037
+  text-align left
+  border-bottom 1.2px dashed rgba(40, 48, 55, 0.11)
+  margin: 0 -20px;
+  padding-left: 20px;
+  padding-bottom 20px
+  margin-bottom 20px
+.order-you-data-inputs
+  display flex
+  align-items center
+
+.inputs-lobarel
+  position: relative;
+  background: rgba(40,48,55,0.02);
+  border: 2px solid rgba(40,48,55,0.03);
+  border-radius: 5px;
+  height: 47px;
+  width: 100%;
+  padding: 14px;
+  color: rgba(40,48,55,0.61);
+  font-family: "Open Sans 400", sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+
+.order-you-data-input
+  width 100%
+  margin-right 25px
+  margin-bottom 20px
+
+  label
+    font-family 'Open Sans 600',sans-serif
+    font-size 12px
+    color #283037
+    margin-bottom 5px
+
+  &:last-child
+    margin-right 0
+
+.order-compare--list
+  display flex
+  justify-content space-between
+  align-items center
+  padding-left 60px
+  padding-right 50px
+  margin-bottom 13px
+
+.order-compare--list-wrap
+  display flex
+  align-items center
+.order-compare--item
+  font-family 'Oswald M',sans-serif
+  font-size 14px
+  color #283037
+.order-compare--list-wrap
+  .order-compare--item
+    &:first-child
+      margin-right 90px
+
+
+.order-compare-item-checkbox
+  background: #fbfbfb;
+  border: 1px solid rgba(40,48,55,0.1);
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+.order-compare-item-checkbox.checked:before
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #faaca8;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 3px rgba(250,172,168,0.3);
+
+.order-compare-item-checkbox-input
+  display none
+
+.order-compare-item-checkbox__info
+  display flex
+  align-items center
+  justify-content space-between
+  background: rgba(40, 48, 55, 0.03);
+  border-radius: 5px;
+  padding 15px 20px
+  width 100%
+  height 80px
+
+.order-compare-item--icon
+  width 110px
+  height 100%
+  margin-right 118px
+
+.order-compare--item-content
+  display flex
+  align-items center
+  margin-bottom 20px
+  cursor pointer
+
+.compare-item-img-price
+  display flex
+  align-items center
+
+.compare-day
+  margin-right 35px
+  font-family 'Open Sans 600',sans-serif
+  font-size 14px
+  color rgba(40, 48, 55, 0.6)
+
+.compare-price
+  font-family 'Open Sans 600',sans-serif
+  font-size 14px
+  color rgba(40, 48, 55, 0.6)
+.order-compare--list-content
+  label
+    width 100%
+
+.method-pay-wrap
+  display flex
+  align-items center
+
+
+.method-pay-item
+  margin-right 25px
+  width 260px
+
+  &:last-child
+    margin-right 0
+
+  label
+    display: flex;
+    align-items: center;
+    background: rgba(40,48,55,0.03);
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 100%;
+    height: 80px;
+    cursor pointer
+
+.method-pay-method
+  font-family 'Open Sans 600',sans-serif
+  font-size 14px
+  color #283037
+
+.method-pay-text
+
+  span
+    font-family 'Open Sans 600',sans-serif
+    font-size 12px
+    color rgba(40, 48, 55, 0.61)
+
+.method-pay-item-check
+  margin-right 15px
+
+.order
+  margin-bottom 120px
+
+.order-wrapper
+  display flex
+
+.your-basket
+  font-size 15px
+
+.order-right
+  padding-right 0
+
+.your-basket--title
+  display flex
+  align-items center
+  justify-content space-between
+  padding-right 20px
+  span
+    font-family 'Roboto 400',sans-serif
+    font-size 13px
+    color rgba(40, 48, 55, 0.61)
+
+.your-basket-product
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 20px
+
+.your-basket-name
+  font-family 'Roboto 400',sans-serif
+  font-size 14px
+  color rgba(40, 48, 55, 0.61)
+
+.your-basket-price
+  font-family 'Roboto 500',sans-serif
+  font-size 14px
+  color #283037
+
+.red-price
+  color #FF2323
+
+.your-basket-result
+  display flex
+  align-items center
+  justify-content space-between
+  font-family 'Merriweather Bold',sans-serif
+  font-size 16px
+  color #283037
+  border-top 1.5px dashed rgba(40, 48, 55, 0.11)
+  margin 0 -20px
+  padding 20px
+  padding-bottom 0
+
+.order-stycky--content
+  position sticky
+  top 100px
+  margin-bottom 10px
+
+button.harmonika-button-pinkblack
+  border none
+  border-bottom 2px solid #FAACA8

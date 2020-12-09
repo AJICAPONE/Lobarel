@@ -1,0 +1,102 @@
+@import 'utils/fonts.styl'
+@import 'utils/vars.styl'
+@import 'utils/mixins.styl'
+@import 'libs.styl'
+
+html
+	font-size baseFontSize
+	height 100%
+	line-height 1.3
+
+body
+	font-family mainFont
+	height 100%
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+
+ul,li
+	list-style-type none
+	margin 0
+	padding 0
+
+p
+	margin 0
+
+a
+	color black
+	text-decoration none
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+
+textarea
+	resize none
+
+section
+	position relative
+
+input,
+select,
+button
+	outline none
+
+*, *:before, *:after
+	box-sizing border-box
+
+.wrapper
+	display flex
+	flex-direction column
+	height 100%
+
+.content
+	flex 1 0 auto
+	position relative
+
+
+
+//Модули
+@import "modules/modules.styl"
+
+// СТРАНИЦЫ
+// Главная
+@import 'pages/index.styl'
+
+// Предзаказ
+@import 'pages/preorder.styl'
+
+// Предзаказ
+@import 'pages/test.styl'
+
+
+// Главная товара
+@import 'pages/product-main.styl'
+
+// Мои желания
+@import 'pages/my-favourite.styl'
+
+// типы кожи
+@import 'pages/type-skin.styl'
+
+// Каталог
+@import 'pages/catalog.styl'
+
+// Оформление заказ
+@import 'pages/order.styl'
+
+// Мой профиль
+@import 'pages/my-room.styl'
+
+@import "pages/dop-style.styl"
+
+@import "pages/media.styl"
+
+
+@import "pages/modals.styl"
+
+

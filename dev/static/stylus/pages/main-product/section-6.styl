@@ -1,0 +1,72 @@
+.lobarel-baner-title
+  font-family 'Merriweather Bold',sans-serif
+  font-size 24px
+  color #283037
+  text-transform uppercase
+  margin-bottom 45px
+
+.lobarel-double-white-bg
+  text-align center
+  position relative
+  padding 30px 40px
+  width 370px
+  background-color: #fff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  &:before
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+  &:after
+    content: '';
+    position: absolute;
+    background-image: url(/static/img/content/flower.png);
+    background-size: contain;
+    width: 300px
+    height: 100%
+    z-index: -1;
+    right: -116px;
+    background-repeat: no-repeat;
+    top: -95px;
+
+
+  .icon
+    size(60px)
+    fill #FAACA8
+    margin-bottom 16px
+
+.lobarel-baner-text
+  font-family 'Roboto 400',sans-serif
+  font-size 14px
+  color rgba(40, 48, 55, 0.6)
+  margin-bottom 50px
+.lobarel-baner-content
+  margin 0 0 0 auto
+  z-index 2
+.lobarel-baner
+  position relative
+  background-repeat no-repeat
+  background-size contain
+  width 100%
+  height max-content
+  padding 45px 0
+  background-position -25% center
+
+  &:before
+    content ''
+    position absolute
+    background-color #283037
+    left 0
+    right 0
+    top 0
+    bottom 0
+    z-index -1
+

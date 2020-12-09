@@ -1,0 +1,274 @@
+.cream-compare
+  height calc(100vh - 80px)
+  //touch-action pan-x
+
+.cream-compare-wrapper
+  display flex
+  position relative
+  justify-content center
+  align-items center
+  height 100%
+
+
+.cream-compare-left
+  background-color #FAACA8
+  position relative
+  height 100%
+  width 100%
+
+.cream-compare-right
+  background-color #232E36
+  position relative
+  height 100%
+  width 100%
+
+  &:before
+    content ''
+    background-image url("/static/img/general/bg-s.png")
+    background-size cover
+    background-repeat no-repeat
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    right 0
+    left 0
+    bottom 0
+  &:after
+    content ''
+    background-color: rgba(32, 40, 48, 0.8);
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    right 0
+    left 0
+    bottom 0
+
+.title-section
+  font-family 'Merriweather Bold',sans-serif
+  font-size 24px
+  color #283037
+  margin-bottom 53px
+
+.title-left
+  text-align right
+  margin-right 30px
+
+.title-right
+  text-align left
+  color #fff
+  margin-left 30px
+  position relative
+  z-index 1
+
+.cream-compare-left,.cream-compare-right
+  padding 30px 0
+
+.cream-compare-circule
+  absolute-center()
+  background-color #fff
+  size(350px)
+  top 55%
+  border-radius 50%
+
+  &:before
+    content ''
+    absolute-center()
+    border 1.5px solid rgba(125, 128, 134, 0.61)
+    border-radius 50%
+    size(440px)
+
+
+#scroll
+  padding: 0px;
+  margin: 0px;
+  //overflow-x: hidden;
+  //overflow-y: hidden;
+
+.box-wrap
+  padding: 0px;
+  margin: 0px;
+  width: 100%
+.cream-compare-circule-img--wrap
+  absolute-center()
+  z-index 2
+.cream-compare-circule-img
+  position relative
+  background-repeat no-repeat
+  background-size contain
+  size(267px)
+  background-position center 55px
+
+  &:after
+    content: '';
+    position: absolute;
+    background-image: url(/static/img/content/flower.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 245px;
+    z-index: -1;
+    display: block;
+    top: -12px;
+    transform: rotate(40deg);
+    right: -77px;
+  &:before
+    content: '';
+    position: absolute;
+    background-image: url(/static/img/content/flower.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 276px;
+    z-index: -1;
+    display: block;
+    top: 0px;
+    transform: rotate(-71deg);
+    left: -27px;
+
+.cream-compare-circule-icons-left
+  absolute-center()
+  top 55%
+  width 100%
+  z-index 2
+
+.cream-compare-circule-icons-right
+  absolute-center()
+  top 55%
+  width 100%
+  z-index 2
+
+
+
+.cream-compare-circule-icon
+  display flex
+  align-items center
+  z-index 2
+  position relative
+  height 34px
+  margin-bottom 15px
+
+.cream-compare-circule-icons-left .cream-compare-circule-icon
+  justify-content flex-end
+
+  &:nth-child(1)
+    margin-right 69px
+
+  &:nth-child(2)
+    margin-right 140px
+
+  &:nth-child(3)
+    margin-right 177px
+
+  &:nth-child(4)
+    margin-right 197px
+
+  &:nth-child(5)
+    margin-right 205px
+
+  &:nth-child(6)
+    margin-right 200px
+
+  &:nth-child(7)
+    margin-right 186px
+
+  &:nth-child(8)
+    margin-right 155px
+
+  &:nth-child(9)
+    margin-right 97px
+
+.cream-compare-circule-icons-right .cream-compare-circule-icon
+  justify-content flex-start
+
+  &:nth-child(1)
+    margin-left 69px
+
+  &:nth-child(2)
+    margin-left 140px
+
+  &:nth-child(3)
+    margin-left 177px
+
+  &:nth-child(4)
+    margin-left 197px
+
+  &:nth-child(5)
+    margin-left 205px
+
+  &:nth-child(6)
+    margin-left 200px
+
+  &:nth-child(7)
+    margin-left 186px
+
+  &:nth-child(8)
+    margin-left 155px
+
+  &:nth-child(9)
+    margin-left 97px
+
+.cream-compare-circule-icons-left
+  span
+    margin-right 15px
+    font-family 'Roboto 400',sans-serif
+    font-size 18px
+    color rgba(40, 48, 55, 0.6)
+
+
+.cream-compare-circule-icons-right
+  span
+    margin-left 15px
+    font-family 'Roboto 400',sans-serif
+    font-size 18px
+    color #fff
+
+.cream-compare-circule-icon-left--wrap,.cream-compare-circule-icon-right--wrap
+  display flex
+  justify-content center
+  align-items center
+  size(29px)
+  border-radius 50%
+  box-shadow 0 0 0 3px rgba(40, 48, 55, 0.31)
+
+  .icon
+    size(17px)
+    fill #fff
+
+
+
+.cream-compare-circule-icon-left--wrap
+  background-color #283037
+
+.cream-compare-circule-icon-right--wrap
+  background-color #fff
+  box-shadow 0 0 0 3px rgba(255, 255, 255, 0.31)
+  .icon
+    fill #232D35
+
+.cream-compare-sticky,.cream-compare-sticky2
+  width 100%
+  height 100%
+
+.cream-compare-relative,.cream-compare-relative2
+  display flex
+  width 100%
+  height 100%
+.cream-compare-absolute,.cream-compare-absolute2
+  width 100%
+  height 100%
+
+.cream-compare-wrapper2
+  height 100%
+
+.cream-compare2
+  height: calc(100vh - 80px);
+
+
+
+
+
+
+
+

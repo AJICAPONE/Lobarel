@@ -1,0 +1,103 @@
+include ../mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1 maximum-scale=1.0, user-scalable=no" )
+        meta(name="keywords" content="")
+
+        link(rel="stylesheet" type='text/css' href="static/css/main.css")
+        link(rel="stylesheet" type='text/css' href="static/css/girl-main-page.css")
+        link(rel="stylesheet" type='text/css' href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/black-tie/jquery-ui.min.css")
+
+        //script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    body(class=pageClass)
+        .wrapper
+            include ../modules/header
+            .content
+                block content
+            include ../modules/footer
+        script(src="static/js/jquery.js")
+        script(src="static/js/libs.min.js")
+        script(src="static/js/main.js")
+        script(src="static/js/jquery.hoverIntent.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script.
+            // Фильтр цена
+            $(function () {
+                $('#filter-slider').slider({
+                    animate: true,
+                    range: true,
+                    min: 300,
+                    max: 1999,
+                    values: [300, 1999],
+                    slide: function (event, ui) {
+
+                        $('.ui-slider-handle:eq(0) .price-range-min').html(ui.values[0]);
+                        $('.ui-slider-handle:eq(1) .price-range-max').html(ui.values[1]);
+                        $('.price-range-both').html('<i>' + ui.values[0] + ' - </i>' + ui.values[1]);
+                        // $('#filter-dot-slide1').val(ui.values[0]);
+                        // $('#filter-dot-slide2').val(ui.values[1]);
+                        $('#hidden1').val(ui.values[0]);
+                        $('#hidden2').val(ui.values[1]);
+
+
+                    },
+                });
+
+                $("input.sliders-filters").change(function () {
+                    var $this = $(this);
+                    $("#filter-slider").slider("values", $this.data("index"), $this.val());
+                });
+
+                var min = $("#filter-slider").slider("option", "min");
+                var max = $("#filter-slider").slider("option", "max");
+                $(".min-values").text(min);
+                $(".max-values").text(max);
+
+            });
+
+
+
+            // Фильтр цена
+            $(function () {
+                $('#filter-slider_2').slider({
+                    animate: true,
+                    range: true,
+                    min: 300,
+                    max: 1999,
+                    values: [300, 1999],
+                    slide: function (event, ui) {
+
+                        $('.ui-slider-handle:eq(0) .price-range-min').html(ui.values[0]);
+                        $('.ui-slider-handle:eq(1) .price-range-max').html(ui.values[1]);
+                        $('.price-range-both').html('<i>' + ui.values[0] + ' - </i>' + ui.values[1]);
+                        // $('#filter-dot-slide1').val(ui.values[0]);
+                        // $('#filter-dot-slide2').val(ui.values[1]);
+                        $('#hidden1_2').val(ui.values[0]);
+                        $('#hidden2_2').val(ui.values[1]);
+
+
+                    },
+                });
+
+                $("input.sliders-filters").change(function () {
+                    var $this = $(this);
+                    $("#filter-slider_2").slider("values", $this.data("index"), $this.val());
+                });
+
+                var min = $("#filter-slider_2").slider("option", "min");
+                var max = $("#filter-slider_2").slider("option", "max");
+                $(".min-values").text(min);
+                $(".max-values").text(max);
+
+            });
+
+
+        block script
